@@ -8,3 +8,13 @@ C:\Users\Oneeyed\Desktop\gitProjects\Book-Shop\Book Shop\Book Shop\obj\Debug\Boo
 C:\Users\Oneeyed\Desktop\gitProjects\Book-Shop\Book Shop\Book Shop\obj\Debug\Book Shop.csproj.CoreCompileInputs.cache
 C:\Users\Oneeyed\Desktop\gitProjects\Book-Shop\Book Shop\Book Shop\obj\Debug\Book Shop.exe
 C:\Users\Oneeyed\Desktop\gitProjects\Book-Shop\Book Shop\Book Shop\obj\Debug\Book Shop.pdb
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Debug\Book Shop.exe.config
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Debug\Book Shop.exe
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Debug\Book Shop.pdb
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.csprojResolveAssemblyReference.cache
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.BookShop.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.Properties.Resources.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.csproj.GenerateResource.Cache
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.csproj.CoreCompileInputs.cache
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.exe
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.pdb

@@ -82,7 +82,7 @@
             this.AddToCartButton.TabIndex = 4;
             this.AddToCartButton.Text = "Add To Cart ->";
             this.AddToCartButton.UseVisualStyleBackColor = true;
-            
+            this.AddToCartButton.Click += new System.EventHandler(this.AddToCartButton_Click);
             // 
             // PurchaseButton
             // 
@@ -106,7 +106,6 @@
             this.Controls.Add(this.ShoppingCartListBox);
             this.Name = "BookShop";
             this.Text = "Book Shop";
-            this.Load += new System.EventHandler(this.BookShop_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
