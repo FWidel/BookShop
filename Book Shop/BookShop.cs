@@ -15,8 +15,11 @@ namespace Book_Shop
         private Store store = new Store();
         BindingSource ItemsBinding = new BindingSource();
         BindingSource ItemsInCartBinding = new BindingSource();
+        BindingSource VendorsBinding = new BindingSource();
 
         List<Item> ItemInCart = new List<Item>();
+
+        private decimal StoreProfit = 0;
 
         public BookShop()
         {
@@ -24,6 +27,8 @@ namespace Book_Shop
             SetupData();
 
             ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
+            VendorsBinding.DataSource = store.Vendors;
+
             StoreItemsListBox.DataSource = ItemsBinding;
             StoreItemsListBox.DisplayMember = "Display";
             StoreItemsListBox.ValueMember = "Display";
@@ -32,6 +37,11 @@ namespace Book_Shop
             ShoppingCartListBox.DataSource = ItemsInCartBinding;
             ShoppingCartListBox.DisplayMember = "Display";
             ShoppingCartListBox.ValueMember = "Display";
+
+            VendorsBinding.DataSource = store.Vendors;
+            VendorsListBox.DataSource = VendorsBinding;
+            VendorsListBox.DisplayMember = "Display";
+            VendorsListBox.ValueMember = "Display";
 
 
         }
@@ -92,12 +102,23 @@ namespace Book_Shop
             foreach(Item item in ItemInCart)
             {
                 item.Sold = true;
+                item.Owner.OwnedMoney += (decimal)item.Owner.Commission * (decimal)item.Prize;
+                StoreProfit += (1 - (decimal)item.Owner.Commission) * (decimal)item.Prize;
             }
             ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
+            VendorsBinding.DataSource = store.Vendors;
             ItemInCart.Clear();
+
+            StoreProfitDecimal.Text = string.Format("{0} zł", StoreProfit);
 
             ItemsBinding.ResetBindings(false);
             ItemsInCartBinding.ResetBindings(false);
+            VendorsBinding.ResetBindings(false);
+
+        }
+
+        private void BookShop_Load(object sender, EventArgs e)
+        {
 
         }
     }

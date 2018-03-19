@@ -36,6 +36,8 @@
             this.PurchaseButton = new System.Windows.Forms.Button();
             this.VendorsListBox = new System.Windows.Forms.ListBox();
             this.VendorsLabel = new System.Windows.Forms.Label();
+            this.StoreProfitLabel = new System.Windows.Forms.Label();
+            this.StoreProfitDecimal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ShoppingCartListBox
@@ -115,11 +117,31 @@
             this.VendorsLabel.TabIndex = 7;
             this.VendorsLabel.Text = "Vendors";
             // 
+            // StoreProfitLabel
+            // 
+            this.StoreProfitLabel.AutoSize = true;
+            this.StoreProfitLabel.Location = new System.Drawing.Point(688, 399);
+            this.StoreProfitLabel.Name = "StoreProfitLabel";
+            this.StoreProfitLabel.Size = new System.Drawing.Size(83, 17);
+            this.StoreProfitLabel.TabIndex = 8;
+            this.StoreProfitLabel.Text = "Store Profit:";
+            // 
+            // StoreProfitDecimal
+            // 
+            this.StoreProfitDecimal.AutoSize = true;
+            this.StoreProfitDecimal.Location = new System.Drawing.Point(784, 399);
+            this.StoreProfitDecimal.Name = "StoreProfitDecimal";
+            this.StoreProfitDecimal.Size = new System.Drawing.Size(46, 17);
+            this.StoreProfitDecimal.TabIndex = 9;
+            this.StoreProfitDecimal.Text = "0,00zł";
+            // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1122, 616);
+            this.Controls.Add(this.StoreProfitDecimal);
+            this.Controls.Add(this.StoreProfitLabel);
             this.Controls.Add(this.VendorsLabel);
             this.Controls.Add(this.VendorsListBox);
             this.Controls.Add(this.PurchaseButton);
@@ -130,6 +152,7 @@
             this.Controls.Add(this.ShoppingCartListBox);
             this.Name = "BookShop";
             this.Text = "Book Shop";
+            this.Load += new System.EventHandler(this.BookShop_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,6 +168,8 @@
         private System.Windows.Forms.Button PurchaseButton;
         private System.Windows.Forms.ListBox VendorsListBox;
         private System.Windows.Forms.Label VendorsLabel;
+        private System.Windows.Forms.Label StoreProfitLabel;
+        private System.Windows.Forms.Label StoreProfitDecimal;
     }
 }
 
