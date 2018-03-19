@@ -23,7 +23,7 @@ namespace Book_Shop
             InitializeComponent();
             SetupData();
 
-            ItemsBinding.DataSource = store.Items;
+            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
             StoreItemsListBox.DataSource = ItemsBinding;
             StoreItemsListBox.DisplayMember = "Display";
             StoreItemsListBox.ValueMember = "Display";
@@ -38,11 +38,43 @@ namespace Book_Shop
 
         private void SetupData()
         {
+            store.Vendors = new List<Vendor>();
+            store.Vendors.Add(new Vendor { LastName = "Nowak", Firstname = "Jarosław", Commission = .6 });
+            store.Vendors.Add(new Vendor { LastName = "Abacki", Firstname = "Adrian", Commission = .6 });
+            store.Vendors.Add(new Vendor { LastName = "Parecki", Firstname = "Mateusz", Commission = .6 });
+
             store.Items = new List<Item>();
-            store.Items.Add(new Item { Title ="Droga Królów", Prize= 30, Author="Brand Sanderson" });
-            store.Items.Add(new Item { Title = "Słowa Światłości", Prize = 40, Author = "Brand Sanderson" });
-            store.Items.Add(new Item { Title = "The Eye of the World", Prize = 25, Author = "Robert Jordan" });
-            store.Items.Add(new Item { Title = "The Great Hunt", Prize = 29, Author = "Robert Jordan" });
+            store.Items.Add(new Item {
+                Title = "Droga Królów",
+                Prize = 30,
+                Author = "Brand Sanderson",
+                Sold = false,
+                Owner = store.Vendors[0]
+            });
+
+            store.Items.Add(new Item {
+                Title = "Słowa Światłości",
+                Prize = 40,
+                Author = "Brand Sanderson",
+                Sold = false,
+                Owner = store.Vendors[0]
+            });
+
+            store.Items.Add(new Item {
+                Title = "The Eye of the World",
+                Prize = 25,
+                Author = "Robert Jordan",
+                Sold = false,
+                Owner = store.Vendors[1]
+            });
+
+            store.Items.Add(new Item {
+                Title = "The Great Hunt",
+                Prize = 29,
+                Author = "Robert Jordan",
+                Sold = false,
+                Owner = store.Vendors[2]
+            });
 
         }
 
@@ -52,6 +84,21 @@ namespace Book_Shop
             itemToCart = (Item)StoreItemsListBox.SelectedItem;
             ItemInCart.Add(itemToCart);
             ItemsInCartBinding.ResetBindings(false);
+        }
+
+        private void PurchaseButton_Click(object sender, EventArgs e)
+        {
+
+            foreach(Item item in ItemInCart)
+            {
+                item.Sold = true;
+            }
+            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
+            ItemInCart.Clear();
+
+            ItemsBinding.ResetBindings(false);
+            ItemsInCartBinding.ResetBindings(false);
+
         }
     }
 }

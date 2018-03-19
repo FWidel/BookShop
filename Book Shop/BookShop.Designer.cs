@@ -34,22 +34,24 @@
             this.ShopOfferLabel = new System.Windows.Forms.Label();
             this.AddToCartButton = new System.Windows.Forms.Button();
             this.PurchaseButton = new System.Windows.Forms.Button();
+            this.VendorsListBox = new System.Windows.Forms.ListBox();
+            this.VendorsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ShoppingCartListBox
             // 
             this.ShoppingCartListBox.FormattingEnabled = true;
             this.ShoppingCartListBox.ItemHeight = 16;
-            this.ShoppingCartListBox.Location = new System.Drawing.Point(691, 123);
+            this.ShoppingCartListBox.Location = new System.Drawing.Point(691, 112);
             this.ShoppingCartListBox.Name = "ShoppingCartListBox";
-            this.ShoppingCartListBox.Size = new System.Drawing.Size(298, 212);
+            this.ShoppingCartListBox.Size = new System.Drawing.Size(298, 164);
             this.ShoppingCartListBox.TabIndex = 0;
             // 
             // ShoppingCartLabel
             // 
             this.ShoppingCartLabel.AutoSize = true;
             this.ShoppingCartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ShoppingCartLabel.Location = new System.Drawing.Point(686, 95);
+            this.ShoppingCartLabel.Location = new System.Drawing.Point(686, 84);
             this.ShoppingCartLabel.Name = "ShoppingCartLabel";
             this.ShoppingCartLabel.Size = new System.Drawing.Size(138, 25);
             this.ShoppingCartLabel.TabIndex = 1;
@@ -61,7 +63,7 @@
             this.StoreItemsListBox.ItemHeight = 16;
             this.StoreItemsListBox.Location = new System.Drawing.Point(49, 112);
             this.StoreItemsListBox.Name = "StoreItemsListBox";
-            this.StoreItemsListBox.Size = new System.Drawing.Size(408, 212);
+            this.StoreItemsListBox.Size = new System.Drawing.Size(408, 164);
             this.StoreItemsListBox.TabIndex = 2;
             // 
             // ShopOfferLabel
@@ -76,7 +78,7 @@
             // 
             // AddToCartButton
             // 
-            this.AddToCartButton.Location = new System.Drawing.Point(498, 183);
+            this.AddToCartButton.Location = new System.Drawing.Point(504, 160);
             this.AddToCartButton.Name = "AddToCartButton";
             this.AddToCartButton.Size = new System.Drawing.Size(149, 50);
             this.AddToCartButton.TabIndex = 4;
@@ -86,18 +88,40 @@
             // 
             // PurchaseButton
             // 
-            this.PurchaseButton.Location = new System.Drawing.Point(777, 356);
+            this.PurchaseButton.Location = new System.Drawing.Point(691, 300);
             this.PurchaseButton.Name = "PurchaseButton";
             this.PurchaseButton.Size = new System.Drawing.Size(158, 48);
             this.PurchaseButton.TabIndex = 5;
             this.PurchaseButton.Text = "Purchase Order";
             this.PurchaseButton.UseVisualStyleBackColor = true;
+            this.PurchaseButton.Click += new System.EventHandler(this.PurchaseButton_Click);
+            // 
+            // VendorsListBox
+            // 
+            this.VendorsListBox.FormattingEnabled = true;
+            this.VendorsListBox.ItemHeight = 16;
+            this.VendorsListBox.Location = new System.Drawing.Point(49, 331);
+            this.VendorsListBox.Name = "VendorsListBox";
+            this.VendorsListBox.Size = new System.Drawing.Size(408, 116);
+            this.VendorsListBox.TabIndex = 6;
+            // 
+            // VendorsLabel
+            // 
+            this.VendorsLabel.AutoSize = true;
+            this.VendorsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VendorsLabel.Location = new System.Drawing.Point(44, 300);
+            this.VendorsLabel.Name = "VendorsLabel";
+            this.VendorsLabel.Size = new System.Drawing.Size(86, 25);
+            this.VendorsLabel.TabIndex = 7;
+            this.VendorsLabel.Text = "Vendors";
             // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 508);
+            this.ClientSize = new System.Drawing.Size(1122, 616);
+            this.Controls.Add(this.VendorsLabel);
+            this.Controls.Add(this.VendorsListBox);
             this.Controls.Add(this.PurchaseButton);
             this.Controls.Add(this.AddToCartButton);
             this.Controls.Add(this.ShopOfferLabel);
@@ -119,6 +143,8 @@
         private System.Windows.Forms.Label ShopOfferLabel;
         private System.Windows.Forms.Button AddToCartButton;
         private System.Windows.Forms.Button PurchaseButton;
+        private System.Windows.Forms.ListBox VendorsListBox;
+        private System.Windows.Forms.Label VendorsLabel;
     }
 }
 

@@ -10,5 +10,6 @@ namespace Book_Shop
     {
         public string Name { get; set; }
         public List<Item> Items { get; set; }
+        public List<Vendor> Vendors { get; set; }
     }
 }
