@@ -85,6 +85,7 @@
             this.PurchaseButton.TabIndex = 15;
             this.PurchaseButton.Text = "Purchase Order";
             this.PurchaseButton.UseVisualStyleBackColor = true;
+            this.PurchaseButton.Click += new System.EventHandler(this.PurchaseButton_Click_1);
             // 
             // AddToCartButton
             // 
@@ -94,6 +95,7 @@
             this.AddToCartButton.TabIndex = 14;
             this.AddToCartButton.Text = "Add To Cart ->";
             this.AddToCartButton.UseVisualStyleBackColor = true;
+            this.AddToCartButton.Click += new System.EventHandler(this.AddToCartButton_Click_1);
             // 
             // ShopOfferLabel
             // 

@@ -24,7 +24,7 @@ namespace Book_Shop
         {
             InitializeComponent();
             SetupData();
-            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
+            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false).ToList(); ;
             VendorsBinding.DataSource = store.Vendors;
 
 
@@ -91,30 +91,32 @@ namespace Book_Shop
         }
 
 
-        private void AddToCartButton_Click(object sender, EventArgs e)
+ 
+
+        private void AddToCartButton_Click_1(object sender, EventArgs e)
         {
             Item itemToCart = new Item();
             itemToCart = (Item)StoreItemsListBox.SelectedItem;
             ItemInCart.Add(itemToCart);
             ItemsInCartBinding.ResetBindings(false);
         }
-        private void PurchaseButton_Click(object sender, EventArgs e)
-        {
 
+        private void PurchaseButton_Click_1(object sender, EventArgs e)
+        {
             foreach (Item item in ItemInCart)
             {
                 item.Sold = true;
                 item.Owner.OwnedMoney += (decimal)item.Owner.Commission * (decimal)item.Prize;
                 StoreProfit += (1 - (decimal)item.Owner.Commission) * (decimal)item.Prize;
             }
-            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
+            
             VendorsBinding.DataSource = store.Vendors;
             ItemInCart.Clear();
+            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false).ToList(); 
 
             StoreProfitDecimal.Text = string.Format("{0} zł", StoreProfit);
-
-            ItemsBinding.ResetBindings(false);
             ItemsInCartBinding.ResetBindings(false);
+            ItemsBinding.ResetBindings(false);
             VendorsBinding.ResetBindings(false);
 
         }
