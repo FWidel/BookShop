@@ -28,148 +28,173 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ShoppingCartListBox = new System.Windows.Forms.ListBox();
-            this.ShoppingCartLabel = new System.Windows.Forms.Label();
-            this.StoreItemsListBox = new System.Windows.Forms.ListBox();
-            this.ShopOfferLabel = new System.Windows.Forms.Label();
-            this.AddToCartButton = new System.Windows.Forms.Button();
-            this.PurchaseButton = new System.Windows.Forms.Button();
-            this.VendorsListBox = new System.Windows.Forms.ListBox();
-            this.VendorsLabel = new System.Windows.Forms.Label();
-            this.StoreProfitLabel = new System.Windows.Forms.Label();
-            this.StoreProfitDecimal = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SidePanel = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.vendorsControl1 = new Book_Shop.VendorsControl();
+            this.oldProject1 = new Book_Shop.OldProject();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ShoppingCartListBox
+            // panel1
             // 
-            this.ShoppingCartListBox.FormattingEnabled = true;
-            this.ShoppingCartListBox.ItemHeight = 16;
-            this.ShoppingCartListBox.Location = new System.Drawing.Point(691, 112);
-            this.ShoppingCartListBox.Name = "ShoppingCartListBox";
-            this.ShoppingCartListBox.Size = new System.Drawing.Size(298, 164);
-            this.ShoppingCartListBox.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.SidePanel);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(199, 666);
+            this.panel1.TabIndex = 0;
             // 
-            // ShoppingCartLabel
+            // SidePanel
             // 
-            this.ShoppingCartLabel.AutoSize = true;
-            this.ShoppingCartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ShoppingCartLabel.Location = new System.Drawing.Point(686, 84);
-            this.ShoppingCartLabel.Name = "ShoppingCartLabel";
-            this.ShoppingCartLabel.Size = new System.Drawing.Size(138, 25);
-            this.ShoppingCartLabel.TabIndex = 1;
-            this.ShoppingCartLabel.Text = "Shopping Cart";
+            this.SidePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SidePanel.Location = new System.Drawing.Point(3, 67);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(14, 74);
+            this.SidePanel.TabIndex = 2;
             // 
-            // StoreItemsListBox
+            // button5
             // 
-            this.StoreItemsListBox.FormattingEnabled = true;
-            this.StoreItemsListBox.ItemHeight = 16;
-            this.StoreItemsListBox.Location = new System.Drawing.Point(49, 112);
-            this.StoreItemsListBox.Name = "StoreItemsListBox";
-            this.StoreItemsListBox.Size = new System.Drawing.Size(408, 164);
-            this.StoreItemsListBox.TabIndex = 2;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(3, 371);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(199, 70);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Settings";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // ShopOfferLabel
+            // button4
             // 
-            this.ShopOfferLabel.AutoSize = true;
-            this.ShopOfferLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ShopOfferLabel.Location = new System.Drawing.Point(44, 84);
-            this.ShopOfferLabel.Name = "ShopOfferLabel";
-            this.ShopOfferLabel.Size = new System.Drawing.Size(59, 25);
-            this.ShopOfferLabel.TabIndex = 3;
-            this.ShopOfferLabel.Text = "Store";
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(3, 219);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(199, 70);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Account";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // AddToCartButton
+            // button3
             // 
-            this.AddToCartButton.Location = new System.Drawing.Point(504, 160);
-            this.AddToCartButton.Name = "AddToCartButton";
-            this.AddToCartButton.Size = new System.Drawing.Size(149, 50);
-            this.AddToCartButton.TabIndex = 4;
-            this.AddToCartButton.Text = "Add To Cart ->";
-            this.AddToCartButton.UseVisualStyleBackColor = true;
-            this.AddToCartButton.Click += new System.EventHandler(this.AddToCartButton_Click);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 143);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(199, 70);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Vendors";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // PurchaseButton
+            // button2
             // 
-            this.PurchaseButton.Location = new System.Drawing.Point(691, 300);
-            this.PurchaseButton.Name = "PurchaseButton";
-            this.PurchaseButton.Size = new System.Drawing.Size(158, 48);
-            this.PurchaseButton.TabIndex = 5;
-            this.PurchaseButton.Text = "Purchase Order";
-            this.PurchaseButton.UseVisualStyleBackColor = true;
-            this.PurchaseButton.Click += new System.EventHandler(this.PurchaseButton_Click);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(3, 295);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(199, 70);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Shopping Cart";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // VendorsListBox
+            // button1
             // 
-            this.VendorsListBox.FormattingEnabled = true;
-            this.VendorsListBox.ItemHeight = 16;
-            this.VendorsListBox.Location = new System.Drawing.Point(49, 331);
-            this.VendorsListBox.Name = "VendorsListBox";
-            this.VendorsListBox.Size = new System.Drawing.Size(408, 116);
-            this.VendorsListBox.TabIndex = 6;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(-3, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(199, 70);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // VendorsLabel
+            // panel2
             // 
-            this.VendorsLabel.AutoSize = true;
-            this.VendorsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.VendorsLabel.Location = new System.Drawing.Point(44, 300);
-            this.VendorsLabel.Name = "VendorsLabel";
-            this.VendorsLabel.Size = new System.Drawing.Size(86, 25);
-            this.VendorsLabel.TabIndex = 7;
-            this.VendorsLabel.Text = "Vendors";
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(199, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1042, 12);
+            this.panel2.TabIndex = 1;
             // 
-            // StoreProfitLabel
+            // vendorsControl1
             // 
-            this.StoreProfitLabel.AutoSize = true;
-            this.StoreProfitLabel.Location = new System.Drawing.Point(688, 399);
-            this.StoreProfitLabel.Name = "StoreProfitLabel";
-            this.StoreProfitLabel.Size = new System.Drawing.Size(83, 17);
-            this.StoreProfitLabel.TabIndex = 8;
-            this.StoreProfitLabel.Text = "Store Profit:";
+            this.vendorsControl1.Location = new System.Drawing.Point(233, 92);
+            this.vendorsControl1.Name = "vendorsControl1";
+            this.vendorsControl1.Size = new System.Drawing.Size(941, 529);
+            this.vendorsControl1.TabIndex = 3;
+            this.vendorsControl1.Load += new System.EventHandler(this.vendorsControl1_Load);
             // 
-            // StoreProfitDecimal
+            // oldProject1
             // 
-            this.StoreProfitDecimal.AutoSize = true;
-            this.StoreProfitDecimal.Location = new System.Drawing.Point(784, 399);
-            this.StoreProfitDecimal.Name = "StoreProfitDecimal";
-            this.StoreProfitDecimal.Size = new System.Drawing.Size(46, 17);
-            this.StoreProfitDecimal.TabIndex = 9;
-            this.StoreProfitDecimal.Text = "0,00zł";
+            this.oldProject1.AutoScroll = true;
+            this.oldProject1.Location = new System.Drawing.Point(205, 67);
+            this.oldProject1.Name = "oldProject1";
+            this.oldProject1.Size = new System.Drawing.Size(1033, 484);
+            this.oldProject1.TabIndex = 2;
+            this.oldProject1.Load += new System.EventHandler(this.oldProject1_Load);
             // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 616);
-            this.Controls.Add(this.StoreProfitDecimal);
-            this.Controls.Add(this.StoreProfitLabel);
-            this.Controls.Add(this.VendorsLabel);
-            this.Controls.Add(this.VendorsListBox);
-            this.Controls.Add(this.PurchaseButton);
-            this.Controls.Add(this.AddToCartButton);
-            this.Controls.Add(this.ShopOfferLabel);
-            this.Controls.Add(this.StoreItemsListBox);
-            this.Controls.Add(this.ShoppingCartLabel);
-            this.Controls.Add(this.ShoppingCartListBox);
+            this.ClientSize = new System.Drawing.Size(1241, 666);
+            this.Controls.Add(this.vendorsControl1);
+            this.Controls.Add(this.oldProject1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookShop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Shop";
             this.Load += new System.EventHandler(this.BookShop_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox ShoppingCartListBox;
-        private System.Windows.Forms.Label ShoppingCartLabel;
-        private System.Windows.Forms.ListBox StoreItemsListBox;
-        private System.Windows.Forms.Label ShopOfferLabel;
-        private System.Windows.Forms.Button AddToCartButton;
-        private System.Windows.Forms.Button PurchaseButton;
-        private System.Windows.Forms.ListBox VendorsListBox;
-        private System.Windows.Forms.Label VendorsLabel;
-        private System.Windows.Forms.Label StoreProfitLabel;
-        private System.Windows.Forms.Label StoreProfitDecimal;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel SidePanel;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private OldProject oldProject1;
+        private VendorsControl vendorsControl1;
     }
 }
 

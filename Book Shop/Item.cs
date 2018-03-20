@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Book_Shop
 {
-    public class Item
+    public class Item 
     {
+      
 
         public string Title { get; set; }
         public double Prize { get; set; }

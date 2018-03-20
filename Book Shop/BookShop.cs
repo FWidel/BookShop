@@ -13,113 +13,55 @@ namespace Book_Shop
     public partial class BookShop : Form
     {
         private Store store = new Store();
-        BindingSource ItemsBinding = new BindingSource();
-        BindingSource ItemsInCartBinding = new BindingSource();
-        BindingSource VendorsBinding = new BindingSource();
 
-        List<Item> ItemInCart = new List<Item>();
-
-        private decimal StoreProfit = 0;
 
         public BookShop()
         {
             InitializeComponent();
-            SetupData();
+            oldProject1.BringToFront();
 
-            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
-            VendorsBinding.DataSource = store.Vendors;
-
-            StoreItemsListBox.DataSource = ItemsBinding;
-            StoreItemsListBox.DisplayMember = "Display";
-            StoreItemsListBox.ValueMember = "Display";
-
-            ItemsInCartBinding.DataSource = ItemInCart;
-            ShoppingCartListBox.DataSource = ItemsInCartBinding;
-            ShoppingCartListBox.DisplayMember = "Display";
-            ShoppingCartListBox.ValueMember = "Display";
-
-            VendorsBinding.DataSource = store.Vendors;
-            VendorsListBox.DataSource = VendorsBinding;
-            VendorsListBox.DisplayMember = "Display";
-            VendorsListBox.ValueMember = "Display";
-
+    
 
         }
 
-        private void SetupData()
-        {
-            store.Vendors = new List<Vendor>();
-            store.Vendors.Add(new Vendor { LastName = "Nowak", Firstname = "Jarosław", Commission = .6 });
-            store.Vendors.Add(new Vendor { LastName = "Abacki", Firstname = "Adrian", Commission = .6 });
-            store.Vendors.Add(new Vendor { LastName = "Parecki", Firstname = "Mateusz", Commission = .6 });
+   
 
-            store.Items = new List<Item>();
-            store.Items.Add(new Item {
-                Title = "Droga Królów",
-                Prize = 30,
-                Author = "Brand Sanderson",
-                Sold = false,
-                Owner = store.Vendors[0]
-            });
+       
 
-            store.Items.Add(new Item {
-                Title = "Słowa Światłości",
-                Prize = 40,
-                Author = "Brand Sanderson",
-                Sold = false,
-                Owner = store.Vendors[0]
-            });
-
-            store.Items.Add(new Item {
-                Title = "The Eye of the World",
-                Prize = 25,
-                Author = "Robert Jordan",
-                Sold = false,
-                Owner = store.Vendors[1]
-            });
-
-            store.Items.Add(new Item {
-                Title = "The Great Hunt",
-                Prize = 29,
-                Author = "Robert Jordan",
-                Sold = false,
-                Owner = store.Vendors[2]
-            });
-
-        }
-
-        private void AddToCartButton_Click(object sender, EventArgs e)
-        {
-            Item itemToCart = new Item();
-            itemToCart = (Item)StoreItemsListBox.SelectedItem;
-            ItemInCart.Add(itemToCart);
-            ItemsInCartBinding.ResetBindings(false);
-        }
-
-        private void PurchaseButton_Click(object sender, EventArgs e)
-        {
-
-            foreach(Item item in ItemInCart)
-            {
-                item.Sold = true;
-                item.Owner.OwnedMoney += (decimal)item.Owner.Commission * (decimal)item.Prize;
-                StoreProfit += (1 - (decimal)item.Owner.Commission) * (decimal)item.Prize;
-            }
-            ItemsBinding.DataSource = store.Items.Where<Item>(item => item.Sold == false);
-            VendorsBinding.DataSource = store.Vendors;
-            ItemInCart.Clear();
-
-            StoreProfitDecimal.Text = string.Format("{0} zł", StoreProfit);
-
-            ItemsBinding.ResetBindings(false);
-            ItemsInCartBinding.ResetBindings(false);
-            VendorsBinding.ResetBindings(false);
-
-        }
+        
 
         private void BookShop_Load(object sender, EventArgs e)
         {
+            this.oldProject1.AutoScroll = true;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+
+            oldProject1.BringToFront();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SidePanel.Top = button3.Top;
+            vendorsControl1.BringToFront();
+        }
+
+        private void vendorsControl1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void oldProject1_Load(object sender, EventArgs e)
+        {
+            this.AutoScroll = true;
         }
     }
 }
