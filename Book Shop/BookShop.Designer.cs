@@ -30,11 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SettingsButton = new System.Windows.Forms.Button();
+            this.AccountButton = new System.Windows.Forms.Button();
+            this.VendorsButton = new System.Windows.Forms.Button();
+            this.ShoppingCartButton = new System.Windows.Forms.Button();
+            this.HomeButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -48,11 +48,11 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Controls.Add(this.SidePanel);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.SettingsButton);
+            this.panel1.Controls.Add(this.AccountButton);
+            this.panel1.Controls.Add(this.VendorsButton);
+            this.panel1.Controls.Add(this.ShoppingCartButton);
+            this.panel1.Controls.Add(this.HomeButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -64,76 +64,78 @@
             this.SidePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SidePanel.Location = new System.Drawing.Point(3, 67);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(14, 74);
+            this.SidePanel.Size = new System.Drawing.Size(16, 70);
             this.SidePanel.TabIndex = 2;
             // 
-            // button5
+            // SettingsButton
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(3, 371);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(199, 70);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Settings";
-            this.button5.UseVisualStyleBackColor = true;
+            this.SettingsButton.FlatAppearance.BorderSize = 0;
+            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingsButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SettingsButton.ForeColor = System.Drawing.Color.White;
+            this.SettingsButton.Location = new System.Drawing.Point(3, 352);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.Size = new System.Drawing.Size(199, 70);
+            this.SettingsButton.TabIndex = 4;
+            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.UseVisualStyleBackColor = true;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
-            // button4
+            // AccountButton
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(3, 219);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(199, 70);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Account";
-            this.button4.UseVisualStyleBackColor = true;
+            this.AccountButton.FlatAppearance.BorderSize = 0;
+            this.AccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AccountButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.AccountButton.ForeColor = System.Drawing.Color.White;
+            this.AccountButton.Location = new System.Drawing.Point(3, 209);
+            this.AccountButton.Name = "AccountButton";
+            this.AccountButton.Size = new System.Drawing.Size(199, 70);
+            this.AccountButton.TabIndex = 3;
+            this.AccountButton.Text = "Account";
+            this.AccountButton.UseVisualStyleBackColor = true;
+            this.AccountButton.Click += new System.EventHandler(this.AccountButton_Click);
             // 
-            // button3
+            // VendorsButton
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 143);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(199, 70);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Vendors";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.VendorsButton.FlatAppearance.BorderSize = 0;
+            this.VendorsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VendorsButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VendorsButton.ForeColor = System.Drawing.Color.White;
+            this.VendorsButton.Location = new System.Drawing.Point(0, 138);
+            this.VendorsButton.Name = "VendorsButton";
+            this.VendorsButton.Size = new System.Drawing.Size(199, 70);
+            this.VendorsButton.TabIndex = 2;
+            this.VendorsButton.Text = "Vendors";
+            this.VendorsButton.UseVisualStyleBackColor = true;
+            this.VendorsButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // ShoppingCartButton
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 295);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(199, 70);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Shopping Cart";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ShoppingCartButton.FlatAppearance.BorderSize = 0;
+            this.ShoppingCartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShoppingCartButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ShoppingCartButton.ForeColor = System.Drawing.Color.White;
+            this.ShoppingCartButton.Location = new System.Drawing.Point(3, 280);
+            this.ShoppingCartButton.Name = "ShoppingCartButton";
+            this.ShoppingCartButton.Size = new System.Drawing.Size(199, 70);
+            this.ShoppingCartButton.TabIndex = 1;
+            this.ShoppingCartButton.Text = "Shopping Cart";
+            this.ShoppingCartButton.UseVisualStyleBackColor = true;
+            this.ShoppingCartButton.Click += new System.EventHandler(this.ShoppingCartButton_Click);
             // 
-            // button1
+            // HomeButton
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(-3, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 70);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.HomeButton.FlatAppearance.BorderSize = 0;
+            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.HomeButton.ForeColor = System.Drawing.Color.White;
+            this.HomeButton.Location = new System.Drawing.Point(-3, 67);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(199, 70);
+            this.HomeButton.TabIndex = 0;
+            this.HomeButton.Text = "Home";
+            this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -146,7 +148,7 @@
             // 
             // vendorsControl1
             // 
-            this.vendorsControl1.Location = new System.Drawing.Point(233, 92);
+            this.vendorsControl1.Location = new System.Drawing.Point(236, 97);
             this.vendorsControl1.Name = "vendorsControl1";
             this.vendorsControl1.Size = new System.Drawing.Size(941, 529);
             this.vendorsControl1.TabIndex = 3;
@@ -183,11 +185,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SettingsButton;
+        private System.Windows.Forms.Button AccountButton;
+        private System.Windows.Forms.Button VendorsButton;
+        private System.Windows.Forms.Button ShoppingCartButton;
+        private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel SidePanel;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
