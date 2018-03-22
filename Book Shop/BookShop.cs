@@ -19,53 +19,21 @@ namespace Book_Shop
         public BookShop()
         {
             InitializeComponent();
-     
-
-
-
+            homePanel1.BringToFront();
 
         }
 
-   
 
-       
-
-        
-
-        private void BookShop_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SidePanel.Height = HomeButton.Height;
-            SidePanel.Top = HomeButton.Top;
-
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            userControl11.BringToFront();
             SidePanel.Top = VendorsButton.Top;
            
 
 
         }
 
-        private void vendorsControl1_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void oldProject1_Load(object sender, EventArgs e)
-        {
-            this.AutoScroll = true;
-        }
-
+  
         private void AccountButton_Click(object sender, EventArgs e)
         {
             SidePanel.Height = AccountButton.Height;
@@ -85,14 +53,15 @@ namespace Book_Shop
             SidePanel.Top = SettingsButton.Top;
         }
 
-        private void userControl11_Load(object sender, EventArgs e)
+
+        private void HomeButton_Click(object sender, EventArgs e)
         {
+            SidePanel.Height = HomeButton.Height;
+            SidePanel.Top = HomeButton.Top;
+            homePanel1.BringToFront();
 
         }
 
-        private void userControl11_Load_1(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

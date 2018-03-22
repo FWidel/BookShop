@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookControl));
             this.BookNameControl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,17 +49,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(23, 68);
+            this.panel1.Location = new System.Drawing.Point(14, 68);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 250);
+            this.panel1.Size = new System.Drawing.Size(230, 260);
             this.panel1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 329);
+            this.button1.Location = new System.Drawing.Point(9, 341);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 55);
+            this.button1.Size = new System.Drawing.Size(244, 55);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add to Cart";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,7 +68,7 @@
             // 
             this.BookPriceLabelControl.AutoSize = true;
             this.BookPriceLabelControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BookPriceLabelControl.Location = new System.Drawing.Point(107, 399);
+            this.BookPriceLabelControl.Location = new System.Drawing.Point(86, 408);
             this.BookPriceLabelControl.Name = "BookPriceLabelControl";
             this.BookPriceLabelControl.Size = new System.Drawing.Size(59, 29);
             this.BookPriceLabelControl.TabIndex = 3;
@@ -80,7 +78,7 @@
             // 
             this.PriceNameLabelControl.AutoSize = true;
             this.PriceNameLabelControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PriceNameLabelControl.Location = new System.Drawing.Point(26, 399);
+            this.PriceNameLabelControl.Location = new System.Drawing.Point(14, 408);
             this.PriceNameLabelControl.Name = "PriceNameLabelControl";
             this.PriceNameLabelControl.Size = new System.Drawing.Size(75, 29);
             this.PriceNameLabelControl.TabIndex = 4;
@@ -90,13 +88,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.PriceNameLabelControl);
             this.Controls.Add(this.BookPriceLabelControl);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BookNameControl);
             this.Name = "BookControl";
-            this.Size = new System.Drawing.Size(272, 451);
+            this.Size = new System.Drawing.Size(257, 447);
             this.ResumeLayout(false);
             this.PerformLayout();
 

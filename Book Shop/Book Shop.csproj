@@ -73,11 +73,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Store.cs" />
-    <Compile Include="UserControl1.cs">
+    <Compile Include="HomePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="HomePanel.Designer.cs">
+      <DependentUpon>HomePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl2.cs">
       <SubType>UserControl</SubType>
@@ -109,9 +109,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="HomePanel.resx">
+      <DependentUpon>HomePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VendorsControl.resx">
       <DependentUpon>VendorsControl.cs</DependentUpon>
@@ -128,6 +129,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kings_way.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\slowa_swiatlosci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\the_eye_of_the_world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\the_great_hunt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\lalka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\reclaiming_our_democracy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

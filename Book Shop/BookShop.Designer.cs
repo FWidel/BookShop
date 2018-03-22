@@ -41,7 +41,9 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.userControl11 = new Book_Shop.UserControl1();
+            this.homePanel2 = new Book_Shop.HomePanel();
+            this.homePanel1 = new Book_Shop.HomePanel();
+            this.userControl11 = new Book_Shop.HomePanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,7 +138,7 @@
             this.HomeButton.TabIndex = 0;
             this.HomeButton.Text = "Home";
             this.HomeButton.UseVisualStyleBackColor = true;
-            this.HomeButton.Click += new System.EventHandler(this.button1_Click);
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // panel2
             // 
@@ -153,6 +155,22 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // homePanel2
+            // 
+            this.homePanel2.AutoScroll = true;
+            this.homePanel2.Location = new System.Drawing.Point(238, 18);
+            this.homePanel2.Name = "homePanel2";
+            this.homePanel2.Size = new System.Drawing.Size(1003, 654);
+            this.homePanel2.TabIndex = 2;
+            // 
+            // homePanel1
+            // 
+            this.homePanel1.AutoScroll = true;
+            this.homePanel1.Location = new System.Drawing.Point(208, 18);
+            this.homePanel1.Name = "homePanel1";
+            this.homePanel1.Size = new System.Drawing.Size(990, 617);
+            this.homePanel1.TabIndex = 2;
+            // 
             // userControl11
             // 
             this.userControl11.AutoScroll = true;
@@ -160,22 +178,19 @@
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
-            this.userControl11.Load += new System.EventHandler(this.userControl11_Load_1);
-       
             // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 666);
-            this.Controls.Add(this.userControl11);
+            this.Controls.Add(this.homePanel2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Shop";
-            this.Load += new System.EventHandler(this.BookShop_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -195,7 +210,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.ImageList imageList1;
-        private UserControl1 userControl11;
+        private HomePanel userControl11;
+        private HomePanel homePanel1;
+        private HomePanel homePanel2;
     }
 }
 

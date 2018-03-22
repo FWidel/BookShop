@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Book_Shop
 {
-    public partial class UserControl1 : UserControl
+    public partial class HomePanel : UserControl
     {
         Store store = new Store();
         private void SetupData()
@@ -28,7 +28,7 @@ namespace Book_Shop
                 Author = "Brand Sanderson",
                 Sold = false,
                 Owner = store.Vendors[0],
-                BookImage = "images/kings_way.png"
+                BookImage = new Bitmap(Properties.Resources.kings_way)
             });
 
             store.Items.Add(new Item
@@ -38,7 +38,7 @@ namespace Book_Shop
                 Author = "Brand Sanderson",
                 Sold = false,
                 Owner = store.Vendors[0],
-                BookImage = "images/kings_way.png"
+                BookImage = new Bitmap(Properties.Resources.slowa_swiatlosci)
             });
 
             store.Items.Add(new Item
@@ -48,7 +48,7 @@ namespace Book_Shop
                 Author = "Robert Jordan",
                 Sold = false,
                 Owner = store.Vendors[1],
-                BookImage = "images/kings_way.png"
+                BookImage = new Bitmap(Properties.Resources.the_eye_of_the_world)
             });
 
             store.Items.Add(new Item
@@ -58,28 +58,51 @@ namespace Book_Shop
                 Author = "Robert Jordan",
                 Sold = false,
                 Owner = store.Vendors[2],
-                BookImage = "images/kings_way.png"
+                BookImage = new Bitmap(Properties.Resources.the_great_hunt)
             });
 
-        }
+            store.Items.Add(new Item
+            {
+                Title = "Reclaiming Our",
+                Prize = 32,
+                Author = "Sam Harris",
+                Sold = false,
+                Owner = store.Vendors[2],
+                BookImage = new Bitmap(Properties.Resources.reclaiming_our_democracy)
+            });
 
-        public UserControl1()
-        {
-            InitializeComponent();
-            SetupData();
+            store.Items.Add(new Item
+            {
+                Title = "Lalka",
+                Prize = 35,
+                Author = "Bolesław Prus",
+                Sold = false,
+                Owner = store.Vendors[2],
+                BookImage = new Bitmap(Properties.Resources.lalka)
+            });
+
+
+
 
             int WSPX = 0;
             int WSPY = 0;
             int TRANSLATIONVERTICAL = 0;
-            foreach(Item item in store.Items)
+            foreach (Item item in store.Items)
             {
-                Image myimage = new Bitmap(@"C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\images\kings_way.png");
-                Controls.Add(new BookControl(item.Title, WSPY, WSPX, myimage ));
-               
+                Controls.Add(new BookControl(WSPY, WSPX, item));
+
                 if (TRANSLATIONVERTICAL < 2) WSPX += 200;
-                if (TRANSLATIONVERTICAL == 2) { WSPY += 400; WSPX = 0; TRANSLATIONVERTICAL = 0; }
+                if (TRANSLATIONVERTICAL == 2) { WSPY += 400; WSPX = 0; TRANSLATIONVERTICAL = -1; }
                 TRANSLATIONVERTICAL++;
             }
+
+
+        }
+
+        public HomePanel()
+        {
+            InitializeComponent();
+            SetupData();
 
             // Set the button to return a value of OK when clicked.
             // button1.DialogResult = DialogResult.OK;

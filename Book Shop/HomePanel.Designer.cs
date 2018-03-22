@@ -1,6 +1,6 @@
 ﻿namespace Book_Shop
 {
-    partial class UserControl1
+    partial class HomePanel
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // UserControl1
+            // HomePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(914, 432);
+            this.Name = "HomePanel";
+            this.Size = new System.Drawing.Size(959, 432);
             this.ResumeLayout(false);
 
         }

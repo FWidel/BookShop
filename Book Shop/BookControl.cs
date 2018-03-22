@@ -12,15 +12,18 @@ namespace Book_Shop
 {
     public partial class BookControl : UserControl
     {
-        public BookControl(string name, int Top, int Left, Image Image)
+        public BookControl(int Top, int Left, Item item)
         {
            
             InitializeComponent();
-            this.BookNameControl.Text = name;
+            this.BookNameControl.Text = item.Title;
             this.Top = Top;
             this.Left = Left;
-            this.panel1.BackgroundImage = Image;
-            
+            this.panel1.BackgroundImage = item.BookImage;
+            this.BookPriceLabelControl.Text = item.Prize.ToString();
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+
+
 
         }
 
