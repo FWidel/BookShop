@@ -51,6 +51,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookControl.Designer.cs">
+      <DependentUpon>BookControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="VendorsControl.Designer.cs">
       <DependentUpon>VendorsControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookControl.resx">
+      <DependentUpon>BookControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookShop.resx">
       <DependentUpon>BookShop.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.SettingsButton = new System.Windows.Forms.Button();
@@ -39,8 +40,8 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.vendorsControl1 = new Book_Shop.VendorsControl();
-            this.oldProject1 = new Book_Shop.OldProject();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.userControl11 = new Book_Shop.UserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,30 +147,28 @@
             this.panel2.Size = new System.Drawing.Size(1042, 12);
             this.panel2.TabIndex = 1;
             // 
-            // vendorsControl1
+            // imageList1
             // 
-            this.vendorsControl1.Location = new System.Drawing.Point(236, 97);
-            this.vendorsControl1.Name = "vendorsControl1";
-            this.vendorsControl1.Size = new System.Drawing.Size(941, 529);
-            this.vendorsControl1.TabIndex = 3;
-            this.vendorsControl1.Load += new System.EventHandler(this.vendorsControl1_Load);
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // oldProject1
+            // userControl11
             // 
-            this.oldProject1.AutoScroll = true;
-            this.oldProject1.Location = new System.Drawing.Point(205, 67);
-            this.oldProject1.Name = "oldProject1";
-            this.oldProject1.Size = new System.Drawing.Size(1033, 484);
-            this.oldProject1.TabIndex = 2;
-            this.oldProject1.Load += new System.EventHandler(this.oldProject1_Load);
+            this.userControl11.AutoScroll = true;
+            this.userControl11.Location = new System.Drawing.Point(219, 59);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(978, 586);
+            this.userControl11.TabIndex = 3;
+            this.userControl11.Load += new System.EventHandler(this.userControl11_Load_1);
+       
             // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 666);
-            this.Controls.Add(this.vendorsControl1);
-            this.Controls.Add(this.oldProject1);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -195,8 +194,8 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private OldProject oldProject1;
-        private VendorsControl vendorsControl1;
+        private System.Windows.Forms.ImageList imageList1;
+        private UserControl1 userControl11;
     }
 }
 

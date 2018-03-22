@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Book_Shop;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,9 +19,10 @@ namespace Book_Shop
         public BookShop()
         {
             InitializeComponent();
-            oldProject1.BringToFront();
+     
 
-    
+
+
 
         }
 
@@ -32,7 +34,7 @@ namespace Book_Shop
 
         private void BookShop_Load(object sender, EventArgs e)
         {
-            this.oldProject1.AutoScroll = true;
+           
         }
 
         
@@ -42,13 +44,16 @@ namespace Book_Shop
             SidePanel.Height = HomeButton.Height;
             SidePanel.Top = HomeButton.Top;
 
-            oldProject1.BringToFront();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            userControl11.BringToFront();
             SidePanel.Top = VendorsButton.Top;
-            vendorsControl1.BringToFront();
+           
+
+
         }
 
         private void vendorsControl1_Load(object sender, EventArgs e)
@@ -78,6 +83,16 @@ namespace Book_Shop
         {
             SidePanel.Height = SettingsButton.Height;
             SidePanel.Top = SettingsButton.Top;
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl11_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

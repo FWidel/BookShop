@@ -17,6 +17,7 @@ namespace Book_Shop
         public int Count { get; set; }
         public string Author { get; set; }
         public Vendor Owner { get; set; }
+        public string BookImage { get; set; }
 
         public string Display
         {
