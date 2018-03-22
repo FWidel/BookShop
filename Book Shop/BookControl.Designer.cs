@@ -96,6 +96,7 @@
             this.Controls.Add(this.BookNameControl);
             this.Name = "BookControl";
             this.Size = new System.Drawing.Size(257, 447);
+            this.Load += new System.EventHandler(this.BookControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

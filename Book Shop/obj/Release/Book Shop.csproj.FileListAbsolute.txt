@@ -1,0 +1,14 @@
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Release\Book Shop.exe.config
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Release\Book Shop.exe
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Release\Book Shop.pdb
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book Shop.csprojResolveAssemblyReference.cache
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book_Shop.BookControl.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book_Shop.BookShop.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book_Shop.OldProject.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book_Shop.Properties.Resources.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book_Shop.HomePanel.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book_Shop.VendorsControl.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book Shop.csproj.GenerateResource.cache
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book Shop.csproj.CoreCompileInputs.cache
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book Shop.exe
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Release\Book Shop.pdb

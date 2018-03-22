@@ -31,7 +31,12 @@ namespace Book_Shop
         private void button1_Click(object sender, EventArgs e)
         {
      
-            MessageBox.Show(this.BookNameControl.Text);
+           
+        }
+
+        private void BookControl_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

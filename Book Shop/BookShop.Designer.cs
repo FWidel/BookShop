@@ -158,7 +158,7 @@
             // homePanel2
             // 
             this.homePanel2.AutoScroll = true;
-            this.homePanel2.Location = new System.Drawing.Point(238, 18);
+            this.homePanel2.Location = new System.Drawing.Point(208, 18);
             this.homePanel2.Name = "homePanel2";
             this.homePanel2.Size = new System.Drawing.Size(1003, 654);
             this.homePanel2.TabIndex = 2;
