@@ -47,10 +47,10 @@
             this.HelpLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BookShopLogo = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.homePanel2 = new Book_Shop.HomePanel();
             this.homePanel1 = new Book_Shop.HomePanel();
             this.userControl11 = new Book_Shop.HomePanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookShopLogo)).BeginInit();
             this.SuspendLayout();
@@ -68,16 +68,16 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(149, 665);
+            this.panel1.Size = new System.Drawing.Size(173, 695);
             this.panel1.TabIndex = 0;
             // 
             // SidePanel
             // 
-            this.SidePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.SidePanel.Location = new System.Drawing.Point(2, 54);
+            this.SidePanel.BackColor = System.Drawing.Color.IndianRed;
+            this.SidePanel.Location = new System.Drawing.Point(1, 54);
             this.SidePanel.Margin = new System.Windows.Forms.Padding(2);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(12, 57);
+            this.SidePanel.Size = new System.Drawing.Size(7, 57);
             this.SidePanel.TabIndex = 2;
             // 
             // SettingsButton
@@ -86,10 +86,12 @@
             this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.SettingsButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsButton.Location = new System.Drawing.Point(2, 286);
+            this.SettingsButton.Image = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Image")));
+            this.SettingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingsButton.Location = new System.Drawing.Point(3, 286);
             this.SettingsButton.Margin = new System.Windows.Forms.Padding(2);
             this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(149, 57);
+            this.SettingsButton.Size = new System.Drawing.Size(173, 57);
             this.SettingsButton.TabIndex = 4;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.UseVisualStyleBackColor = true;
@@ -101,10 +103,12 @@
             this.AccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AccountButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.AccountButton.ForeColor = System.Drawing.Color.White;
-            this.AccountButton.Location = new System.Drawing.Point(2, 170);
+            this.AccountButton.Image = ((System.Drawing.Image)(resources.GetObject("AccountButton.Image")));
+            this.AccountButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.AccountButton.Location = new System.Drawing.Point(3, 170);
             this.AccountButton.Margin = new System.Windows.Forms.Padding(2);
             this.AccountButton.Name = "AccountButton";
-            this.AccountButton.Size = new System.Drawing.Size(149, 57);
+            this.AccountButton.Size = new System.Drawing.Size(173, 57);
             this.AccountButton.TabIndex = 3;
             this.AccountButton.Text = "Account";
             this.AccountButton.UseVisualStyleBackColor = true;
@@ -116,12 +120,15 @@
             this.VendorsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VendorsButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.VendorsButton.ForeColor = System.Drawing.Color.White;
-            this.VendorsButton.Location = new System.Drawing.Point(0, 112);
+            this.VendorsButton.Image = ((System.Drawing.Image)(resources.GetObject("VendorsButton.Image")));
+            this.VendorsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VendorsButton.Location = new System.Drawing.Point(1, 112);
             this.VendorsButton.Margin = new System.Windows.Forms.Padding(2);
             this.VendorsButton.Name = "VendorsButton";
-            this.VendorsButton.Size = new System.Drawing.Size(149, 57);
+            this.VendorsButton.Size = new System.Drawing.Size(175, 57);
             this.VendorsButton.TabIndex = 2;
-            this.VendorsButton.Text = "Vendors";
+            this.VendorsButton.Text = "Favourite Books";
+            this.VendorsButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.VendorsButton.UseVisualStyleBackColor = true;
             this.VendorsButton.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -131,12 +138,15 @@
             this.ShoppingCartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ShoppingCartButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ShoppingCartButton.ForeColor = System.Drawing.Color.White;
-            this.ShoppingCartButton.Location = new System.Drawing.Point(2, 228);
+            this.ShoppingCartButton.Image = ((System.Drawing.Image)(resources.GetObject("ShoppingCartButton.Image")));
+            this.ShoppingCartButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ShoppingCartButton.Location = new System.Drawing.Point(3, 228);
             this.ShoppingCartButton.Margin = new System.Windows.Forms.Padding(2);
             this.ShoppingCartButton.Name = "ShoppingCartButton";
-            this.ShoppingCartButton.Size = new System.Drawing.Size(149, 57);
+            this.ShoppingCartButton.Size = new System.Drawing.Size(170, 57);
             this.ShoppingCartButton.TabIndex = 1;
             this.ShoppingCartButton.Text = "Shopping Cart";
+            this.ShoppingCartButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ShoppingCartButton.UseVisualStyleBackColor = true;
             this.ShoppingCartButton.Click += new System.EventHandler(this.ShoppingCartButton_Click);
             // 
@@ -146,10 +156,12 @@
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HomeButton.ForeColor = System.Drawing.Color.White;
-            this.HomeButton.Location = new System.Drawing.Point(-2, 54);
+            this.HomeButton.Image = ((System.Drawing.Image)(resources.GetObject("HomeButton.Image")));
+            this.HomeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeButton.Location = new System.Drawing.Point(3, 54);
             this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
             this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(149, 57);
+            this.HomeButton.Size = new System.Drawing.Size(173, 57);
             this.HomeButton.TabIndex = 0;
             this.HomeButton.Text = "Home";
             this.HomeButton.UseVisualStyleBackColor = true;
@@ -159,10 +171,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(149, 0);
+            this.panel2.Location = new System.Drawing.Point(173, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(820, 10);
+            this.panel2.Size = new System.Drawing.Size(839, 10);
             this.panel2.TabIndex = 1;
             // 
             // imageList1
@@ -175,7 +187,7 @@
             // 
             this.CloseProgramLabel.AutoSize = true;
             this.CloseProgramLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CloseProgramLabel.Location = new System.Drawing.Point(939, 12);
+            this.CloseProgramLabel.Location = new System.Drawing.Point(975, 12);
             this.CloseProgramLabel.Name = "CloseProgramLabel";
             this.CloseProgramLabel.Size = new System.Drawing.Size(20, 19);
             this.CloseProgramLabel.TabIndex = 0;
@@ -188,7 +200,7 @@
             // 
             this.MinimalizeLabel.AutoSize = true;
             this.MinimalizeLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.MinimalizeLabel.Location = new System.Drawing.Point(911, 12);
+            this.MinimalizeLabel.Location = new System.Drawing.Point(947, 12);
             this.MinimalizeLabel.Name = "MinimalizeLabel";
             this.MinimalizeLabel.Size = new System.Drawing.Size(17, 19);
             this.MinimalizeLabel.TabIndex = 1;
@@ -201,7 +213,7 @@
             // 
             this.HelpLabel.AutoSize = true;
             this.HelpLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.HelpLabel.Location = new System.Drawing.Point(879, 12);
+            this.HelpLabel.Location = new System.Drawing.Point(916, 12);
             this.HelpLabel.Name = "HelpLabel";
             this.HelpLabel.Size = new System.Drawing.Size(18, 19);
             this.HelpLabel.TabIndex = 2;
@@ -213,7 +225,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(154, 20);
+            this.label1.Location = new System.Drawing.Point(178, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 3;
@@ -223,7 +235,7 @@
             // 
             this.BookShopLogo.BackColor = System.Drawing.Color.IndianRed;
             this.BookShopLogo.Image = ((System.Drawing.Image)(resources.GetObject("BookShopLogo.Image")));
-            this.BookShopLogo.Location = new System.Drawing.Point(247, 9);
+            this.BookShopLogo.Location = new System.Drawing.Point(269, 9);
             this.BookShopLogo.Margin = new System.Windows.Forms.Padding(0);
             this.BookShopLogo.MaximumSize = new System.Drawing.Size(100, 200);
             this.BookShopLogo.Name = "BookShopLogo";
@@ -232,10 +244,20 @@
             this.BookShopLogo.TabIndex = 5;
             this.BookShopLogo.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(359, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(204, 21);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Designed By FWidel in C#";
+            // 
             // homePanel2
             // 
             this.homePanel2.AutoScroll = true;
-            this.homePanel2.Location = new System.Drawing.Point(153, 135);
+            this.homePanel2.Location = new System.Drawing.Point(196, 160);
             this.homePanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homePanel2.Name = "homePanel2";
             this.homePanel2.Size = new System.Drawing.Size(815, 531);
@@ -259,21 +281,11 @@
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(330, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 21);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Designed By FWidel in C#";
-            // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 665);
+            this.ClientSize = new System.Drawing.Size(1012, 695);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BookShopLogo);
             this.Controls.Add(this.label1);
