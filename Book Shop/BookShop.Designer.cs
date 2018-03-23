@@ -140,7 +140,7 @@
             this.ShoppingCartButton.ForeColor = System.Drawing.Color.White;
             this.ShoppingCartButton.Image = ((System.Drawing.Image)(resources.GetObject("ShoppingCartButton.Image")));
             this.ShoppingCartButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ShoppingCartButton.Location = new System.Drawing.Point(3, 228);
+            this.ShoppingCartButton.Location = new System.Drawing.Point(-2, 228);
             this.ShoppingCartButton.Margin = new System.Windows.Forms.Padding(2);
             this.ShoppingCartButton.Name = "ShoppingCartButton";
             this.ShoppingCartButton.Size = new System.Drawing.Size(170, 57);
