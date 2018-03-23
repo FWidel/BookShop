@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookShop));
             this.panel1 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.SettingsButton = new System.Windows.Forms.Button();
@@ -45,10 +46,13 @@
             this.MinimalizeLabel = new System.Windows.Forms.Label();
             this.HelpLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BookShopLogo = new System.Windows.Forms.PictureBox();
             this.homePanel2 = new Book_Shop.HomePanel();
             this.homePanel1 = new Book_Shop.HomePanel();
             this.userControl11 = new Book_Shop.HomePanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BookShopLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,7 +68,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(149, 626);
+            this.panel1.Size = new System.Drawing.Size(149, 665);
             this.panel1.TabIndex = 0;
             // 
             // SidePanel
@@ -158,7 +162,7 @@
             this.panel2.Location = new System.Drawing.Point(149, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(819, 10);
+            this.panel2.Size = new System.Drawing.Size(820, 10);
             this.panel2.TabIndex = 1;
             // 
             // imageList1
@@ -209,16 +213,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(154, 18);
+            this.label1.Location = new System.Drawing.Point(154, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Book Shop";
             // 
+            // BookShopLogo
+            // 
+            this.BookShopLogo.BackColor = System.Drawing.Color.IndianRed;
+            this.BookShopLogo.Image = ((System.Drawing.Image)(resources.GetObject("BookShopLogo.Image")));
+            this.BookShopLogo.Location = new System.Drawing.Point(247, 9);
+            this.BookShopLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.BookShopLogo.MaximumSize = new System.Drawing.Size(100, 200);
+            this.BookShopLogo.Name = "BookShopLogo";
+            this.BookShopLogo.Size = new System.Drawing.Size(80, 84);
+            this.BookShopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BookShopLogo.TabIndex = 5;
+            this.BookShopLogo.TabStop = false;
+            // 
             // homePanel2
             // 
             this.homePanel2.AutoScroll = true;
-            this.homePanel2.Location = new System.Drawing.Point(153, 95);
+            this.homePanel2.Location = new System.Drawing.Point(153, 135);
             this.homePanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homePanel2.Name = "homePanel2";
             this.homePanel2.Size = new System.Drawing.Size(815, 531);
@@ -242,11 +259,23 @@
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(330, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(204, 21);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Designed By FWidel in C#";
+            // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 626);
+            this.ClientSize = new System.Drawing.Size(969, 665);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.BookShopLogo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.homePanel2);
             this.Controls.Add(this.HelpLabel);
@@ -260,6 +289,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Shop";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BookShopLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,6 +316,8 @@
         private System.Windows.Forms.Label MinimalizeLabel;
         private System.Windows.Forms.Label CloseProgramLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox BookShopLogo;
+        private System.Windows.Forms.Label label2;
     }
 }
 
