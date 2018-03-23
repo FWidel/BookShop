@@ -57,6 +57,12 @@
     <Compile Include="BookControl.Designer.cs">
       <DependentUpon>BookControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookInCartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookInCartControl.Designer.cs">
+      <DependentUpon>BookInCartControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,14 +70,20 @@
       <DependentUpon>BookShop.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs" />
-    <Compile Include="OldProject.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="OldProject.Designer.cs">
-      <DependentUpon>OldProject.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopCartBookControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopCartBookControl.Designer.cs">
+      <DependentUpon>ShopCartBookControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopCartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopCartControl.Designer.cs">
+      <DependentUpon>ShopCartControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Store.cs" />
     <Compile Include="HomePanel.cs">
       <SubType>UserControl</SubType>
@@ -95,11 +107,11 @@
     <EmbeddedResource Include="BookControl.resx">
       <DependentUpon>BookControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookInCartControl.resx">
+      <DependentUpon>BookInCartControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookShop.resx">
       <DependentUpon>BookShop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OldProject.resx">
-      <DependentUpon>OldProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +125,9 @@
     </Compile>
     <EmbeddedResource Include="HomePanel.resx">
       <DependentUpon>HomePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopCartControl.resx">
+      <DependentUpon>ShopCartControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VendorsControl.resx">
       <DependentUpon>VendorsControl.cs</DependentUpon>

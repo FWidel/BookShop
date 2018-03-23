@@ -44,6 +44,12 @@ namespace Book_Shop
         {
             SidePanel.Height = ShoppingCartButton.Height;
             SidePanel.Top = ShoppingCartButton.Top;
+            shopCartControl1.BringToFront();
+
+            shopCartControl1.Controls.Add(new ShopCartControl()); // to
+          
+            //shopCartControl1.Refresh();
+
 
         }
 
@@ -58,7 +64,7 @@ namespace Book_Shop
         {
             SidePanel.Height = HomeButton.Height;
             SidePanel.Top = HomeButton.Top;
-            homePanel1.BringToFront();
+            homePanel2.BringToFront();
 
         }
 
@@ -108,6 +114,11 @@ namespace Book_Shop
         {
             Label senderObject = (Label)sender;
             senderObject.ForeColor = Color.Black;
+
+        }
+
+        private void ShoppingCartButton_MouseClick(object sender, MouseEventArgs e)
+        {
 
         }
     }

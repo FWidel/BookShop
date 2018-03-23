@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BookShopLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.shopCartControl1 = new Book_Shop.ShopCartControl();
             this.homePanel2 = new Book_Shop.HomePanel();
             this.homePanel1 = new Book_Shop.HomePanel();
             this.userControl11 = new Book_Shop.HomePanel();
@@ -149,6 +150,7 @@
             this.ShoppingCartButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ShoppingCartButton.UseVisualStyleBackColor = true;
             this.ShoppingCartButton.Click += new System.EventHandler(this.ShoppingCartButton_Click);
+
             // 
             // HomeButton
             // 
@@ -254,11 +256,19 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Designed By FWidel in C#";
             // 
+            // shopCartControl1
+            // 
+            this.shopCartControl1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.shopCartControl1.Location = new System.Drawing.Point(177, 131);
+            this.shopCartControl1.Name = "shopCartControl1";
+            this.shopCartControl1.Size = new System.Drawing.Size(833, 559);
+            this.shopCartControl1.TabIndex = 7;
+            // 
             // homePanel2
             // 
             this.homePanel2.AutoScroll = true;
             this.homePanel2.Location = new System.Drawing.Point(196, 160);
-            this.homePanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homePanel2.Margin = new System.Windows.Forms.Padding(2);
             this.homePanel2.Name = "homePanel2";
             this.homePanel2.Size = new System.Drawing.Size(815, 531);
             this.homePanel2.TabIndex = 2;
@@ -267,7 +277,7 @@
             // 
             this.homePanel1.AutoScroll = true;
             this.homePanel1.Location = new System.Drawing.Point(208, 18);
-            this.homePanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homePanel1.Margin = new System.Windows.Forms.Padding(2);
             this.homePanel1.Name = "homePanel1";
             this.homePanel1.Size = new System.Drawing.Size(990, 617);
             this.homePanel1.TabIndex = 2;
@@ -276,7 +286,7 @@
             // 
             this.userControl11.AutoScroll = true;
             this.userControl11.Location = new System.Drawing.Point(219, 59);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(2);
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
@@ -289,12 +299,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BookShopLogo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.homePanel2);
             this.Controls.Add(this.HelpLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.MinimalizeLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.CloseProgramLabel);
+            this.Controls.Add(this.shopCartControl1);
+            this.Controls.Add(this.homePanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookShop";
@@ -330,6 +341,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox BookShopLogo;
         private System.Windows.Forms.Label label2;
+        private ShopCartControl shopCartControl1;
     }
 }
 
