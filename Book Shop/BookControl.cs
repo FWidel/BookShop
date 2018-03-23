@@ -36,7 +36,7 @@ namespace Book_Shop
 
         private void BookControl_Load(object sender, EventArgs e)
         {
-            
+               
         }
     }
 }

@@ -62,6 +62,53 @@ namespace Book_Shop
 
         }
 
-     
+        private void CloseProgramLabel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MinimalizeLabel_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void CloseProgramLabel_MouseEnter(object sender, EventArgs e)
+        {
+            Label senderObject = (Label)sender;
+            senderObject.ForeColor = Color.IndianRed;
+        }
+
+        private void CloseProgramLabel_MouseLeave(object sender, EventArgs e)
+        {
+            Label senderObject = (Label)sender;
+            senderObject.ForeColor = Color.Black;
+        }
+
+        private void MinimalizeLabel_MouseEnter(object sender, EventArgs e)
+        {
+            Label senderObject = (Label)sender;
+            senderObject.ForeColor = Color.IndianRed;
+
+        }
+
+        private void MinimalizeLabel_MouseLeave(object sender, EventArgs e)
+        {
+            Label senderObject = (Label)sender;
+            senderObject.ForeColor = Color.Black;
+
+        }
+
+        private void HelpLabel_MouseEnter(object sender, EventArgs e)
+        {
+            Label senderObject = (Label)sender;
+            senderObject.ForeColor = Color.IndianRed;
+        }
+
+        private void HelpLabel_MouseLeave(object sender, EventArgs e)
+        {
+            Label senderObject = (Label)sender;
+            senderObject.ForeColor = Color.Black;
+
+        }
     }
 }

@@ -41,6 +41,10 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.CloseProgramLabel = new System.Windows.Forms.Label();
+            this.MinimalizeLabel = new System.Windows.Forms.Label();
+            this.HelpLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.homePanel2 = new Book_Shop.HomePanel();
             this.homePanel1 = new Book_Shop.HomePanel();
             this.userControl11 = new Book_Shop.HomePanel();
@@ -49,7 +53,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.SettingsButton);
             this.panel1.Controls.Add(this.AccountButton);
@@ -58,16 +62,18 @@
             this.panel1.Controls.Add(this.HomeButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(199, 666);
+            this.panel1.Size = new System.Drawing.Size(149, 626);
             this.panel1.TabIndex = 0;
             // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.SidePanel.Location = new System.Drawing.Point(3, 67);
+            this.SidePanel.Location = new System.Drawing.Point(2, 54);
+            this.SidePanel.Margin = new System.Windows.Forms.Padding(2);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(16, 70);
+            this.SidePanel.Size = new System.Drawing.Size(12, 57);
             this.SidePanel.TabIndex = 2;
             // 
             // SettingsButton
@@ -76,9 +82,10 @@
             this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingsButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.SettingsButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsButton.Location = new System.Drawing.Point(3, 352);
+            this.SettingsButton.Location = new System.Drawing.Point(2, 286);
+            this.SettingsButton.Margin = new System.Windows.Forms.Padding(2);
             this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(199, 70);
+            this.SettingsButton.Size = new System.Drawing.Size(149, 57);
             this.SettingsButton.TabIndex = 4;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.UseVisualStyleBackColor = true;
@@ -90,9 +97,10 @@
             this.AccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AccountButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.AccountButton.ForeColor = System.Drawing.Color.White;
-            this.AccountButton.Location = new System.Drawing.Point(3, 209);
+            this.AccountButton.Location = new System.Drawing.Point(2, 170);
+            this.AccountButton.Margin = new System.Windows.Forms.Padding(2);
             this.AccountButton.Name = "AccountButton";
-            this.AccountButton.Size = new System.Drawing.Size(199, 70);
+            this.AccountButton.Size = new System.Drawing.Size(149, 57);
             this.AccountButton.TabIndex = 3;
             this.AccountButton.Text = "Account";
             this.AccountButton.UseVisualStyleBackColor = true;
@@ -104,9 +112,10 @@
             this.VendorsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VendorsButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.VendorsButton.ForeColor = System.Drawing.Color.White;
-            this.VendorsButton.Location = new System.Drawing.Point(0, 138);
+            this.VendorsButton.Location = new System.Drawing.Point(0, 112);
+            this.VendorsButton.Margin = new System.Windows.Forms.Padding(2);
             this.VendorsButton.Name = "VendorsButton";
-            this.VendorsButton.Size = new System.Drawing.Size(199, 70);
+            this.VendorsButton.Size = new System.Drawing.Size(149, 57);
             this.VendorsButton.TabIndex = 2;
             this.VendorsButton.Text = "Vendors";
             this.VendorsButton.UseVisualStyleBackColor = true;
@@ -118,9 +127,10 @@
             this.ShoppingCartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ShoppingCartButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ShoppingCartButton.ForeColor = System.Drawing.Color.White;
-            this.ShoppingCartButton.Location = new System.Drawing.Point(3, 280);
+            this.ShoppingCartButton.Location = new System.Drawing.Point(2, 228);
+            this.ShoppingCartButton.Margin = new System.Windows.Forms.Padding(2);
             this.ShoppingCartButton.Name = "ShoppingCartButton";
-            this.ShoppingCartButton.Size = new System.Drawing.Size(199, 70);
+            this.ShoppingCartButton.Size = new System.Drawing.Size(149, 57);
             this.ShoppingCartButton.TabIndex = 1;
             this.ShoppingCartButton.Text = "Shopping Cart";
             this.ShoppingCartButton.UseVisualStyleBackColor = true;
@@ -132,9 +142,10 @@
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeButton.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HomeButton.ForeColor = System.Drawing.Color.White;
-            this.HomeButton.Location = new System.Drawing.Point(-3, 67);
+            this.HomeButton.Location = new System.Drawing.Point(-2, 54);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
             this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(199, 70);
+            this.HomeButton.Size = new System.Drawing.Size(149, 57);
             this.HomeButton.TabIndex = 0;
             this.HomeButton.Text = "Home";
             this.HomeButton.UseVisualStyleBackColor = true;
@@ -142,11 +153,12 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.IndianRed;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(199, 0);
+            this.panel2.Location = new System.Drawing.Point(149, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1042, 12);
+            this.panel2.Size = new System.Drawing.Size(819, 10);
             this.panel2.TabIndex = 1;
             // 
             // imageList1
@@ -155,18 +167,68 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // CloseProgramLabel
+            // 
+            this.CloseProgramLabel.AutoSize = true;
+            this.CloseProgramLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CloseProgramLabel.Location = new System.Drawing.Point(939, 12);
+            this.CloseProgramLabel.Name = "CloseProgramLabel";
+            this.CloseProgramLabel.Size = new System.Drawing.Size(20, 19);
+            this.CloseProgramLabel.TabIndex = 0;
+            this.CloseProgramLabel.Text = "X";
+            this.CloseProgramLabel.Click += new System.EventHandler(this.CloseProgramLabel_Click);
+            this.CloseProgramLabel.MouseEnter += new System.EventHandler(this.CloseProgramLabel_MouseEnter);
+            this.CloseProgramLabel.MouseLeave += new System.EventHandler(this.CloseProgramLabel_MouseLeave);
+            // 
+            // MinimalizeLabel
+            // 
+            this.MinimalizeLabel.AutoSize = true;
+            this.MinimalizeLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.MinimalizeLabel.Location = new System.Drawing.Point(911, 12);
+            this.MinimalizeLabel.Name = "MinimalizeLabel";
+            this.MinimalizeLabel.Size = new System.Drawing.Size(17, 19);
+            this.MinimalizeLabel.TabIndex = 1;
+            this.MinimalizeLabel.Text = "_";
+            this.MinimalizeLabel.Click += new System.EventHandler(this.MinimalizeLabel_Click);
+            this.MinimalizeLabel.MouseEnter += new System.EventHandler(this.MinimalizeLabel_MouseEnter);
+            this.MinimalizeLabel.MouseLeave += new System.EventHandler(this.MinimalizeLabel_MouseLeave);
+            // 
+            // HelpLabel
+            // 
+            this.HelpLabel.AutoSize = true;
+            this.HelpLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.HelpLabel.Location = new System.Drawing.Point(879, 12);
+            this.HelpLabel.Name = "HelpLabel";
+            this.HelpLabel.Size = new System.Drawing.Size(18, 19);
+            this.HelpLabel.TabIndex = 2;
+            this.HelpLabel.Text = "?";
+            this.HelpLabel.MouseEnter += new System.EventHandler(this.HelpLabel_MouseEnter);
+            this.HelpLabel.MouseLeave += new System.EventHandler(this.HelpLabel_MouseLeave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(154, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 21);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Book Shop";
+            // 
             // homePanel2
             // 
             this.homePanel2.AutoScroll = true;
-            this.homePanel2.Location = new System.Drawing.Point(208, 18);
+            this.homePanel2.Location = new System.Drawing.Point(153, 95);
+            this.homePanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homePanel2.Name = "homePanel2";
-            this.homePanel2.Size = new System.Drawing.Size(1003, 654);
+            this.homePanel2.Size = new System.Drawing.Size(815, 531);
             this.homePanel2.TabIndex = 2;
             // 
             // homePanel1
             // 
             this.homePanel1.AutoScroll = true;
             this.homePanel1.Location = new System.Drawing.Point(208, 18);
+            this.homePanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homePanel1.Name = "homePanel1";
             this.homePanel1.Size = new System.Drawing.Size(990, 617);
             this.homePanel1.TabIndex = 2;
@@ -175,24 +237,31 @@
             // 
             this.userControl11.AutoScroll = true;
             this.userControl11.Location = new System.Drawing.Point(219, 59);
+            this.userControl11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
             // 
             // BookShop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 666);
+            this.ClientSize = new System.Drawing.Size(968, 626);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.homePanel2);
+            this.Controls.Add(this.HelpLabel);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.MinimalizeLabel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.CloseProgramLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Shop";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -213,6 +282,10 @@
         private HomePanel userControl11;
         private HomePanel homePanel1;
         private HomePanel homePanel2;
+        private System.Windows.Forms.Label HelpLabel;
+        private System.Windows.Forms.Label MinimalizeLabel;
+        private System.Windows.Forms.Label CloseProgramLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 
