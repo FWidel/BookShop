@@ -48,11 +48,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BookShopLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.shopCartControl1 = new Book_Shop.ShopCartControl();
+            this.ShoppingCartCountItems = new System.Windows.Forms.Label();
             this.homePanel2 = new Book_Shop.HomePanel();
+            this.shopCartControl1 = new Book_Shop.ShopCartControl();
             this.homePanel1 = new Book_Shop.HomePanel();
             this.userControl11 = new Book_Shop.HomePanel();
-            this.ShoppingCartCountItems = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookShopLogo)).BeginInit();
             this.SuspendLayout();
@@ -257,13 +257,15 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Designed By FWidel in C#";
             // 
-            // shopCartControl1
+            // ShoppingCartCountItems
             // 
-            this.shopCartControl1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.shopCartControl1.Location = new System.Drawing.Point(178, 160);
-            this.shopCartControl1.Name = "shopCartControl1";
-            this.shopCartControl1.Size = new System.Drawing.Size(833, 559);
-            this.shopCartControl1.TabIndex = 7;
+            this.ShoppingCartCountItems.AutoSize = true;
+            this.ShoppingCartCountItems.BackColor = System.Drawing.Color.Red;
+            this.ShoppingCartCountItems.Location = new System.Drawing.Point(36, 255);
+            this.ShoppingCartCountItems.Name = "ShoppingCartCountItems";
+            this.ShoppingCartCountItems.Size = new System.Drawing.Size(13, 13);
+            this.ShoppingCartCountItems.TabIndex = 5;
+            this.ShoppingCartCountItems.Text = "0";
             // 
             // homePanel2
             // 
@@ -273,6 +275,14 @@
             this.homePanel2.Name = "homePanel2";
             this.homePanel2.Size = new System.Drawing.Size(815, 531);
             this.homePanel2.TabIndex = 2;
+            // 
+            // shopCartControl1
+            // 
+            this.shopCartControl1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.shopCartControl1.Location = new System.Drawing.Point(178, 160);
+            this.shopCartControl1.Name = "shopCartControl1";
+            this.shopCartControl1.Size = new System.Drawing.Size(833, 559);
+            this.shopCartControl1.TabIndex = 7;
             // 
             // homePanel1
             // 
@@ -292,16 +302,6 @@
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
             // 
-            // ShoppingCartCountItems
-            // 
-            this.ShoppingCartCountItems.AutoSize = true;
-            this.ShoppingCartCountItems.BackColor = System.Drawing.Color.Red;
-            this.ShoppingCartCountItems.Location = new System.Drawing.Point(36, 255);
-            this.ShoppingCartCountItems.Name = "ShoppingCartCountItems";
-            this.ShoppingCartCountItems.Size = new System.Drawing.Size(13, 13);
-            this.ShoppingCartCountItems.TabIndex = 5;
-            this.ShoppingCartCountItems.Text = "0";
-            // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,8 +315,8 @@
             this.Controls.Add(this.MinimalizeLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.CloseProgramLabel);
-            this.Controls.Add(this.homePanel2);
             this.Controls.Add(this.shopCartControl1);
+            this.Controls.Add(this.homePanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookShop";

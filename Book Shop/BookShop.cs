@@ -13,16 +13,20 @@ namespace Book_Shop
 {
     public partial class BookShop : Form
     {
+        
         private Store store = new Store();
-
-
+       
         public BookShop()
         {
             InitializeComponent();
+            //public static int count = 1;
+            //public static BookShop bookShop = new BookShop();
             homePanel1.BringToFront();
             homePanel2.BringToFront();
+           
         }
 
+      
 
 
         private void button3_Click(object sender, EventArgs e)

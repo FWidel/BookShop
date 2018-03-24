@@ -21,11 +21,21 @@ namespace Book_Shop
             this.BookInShopCartPictureBox.Image = item.BookImage;
             this.ShopCartTotalPriceForBookLabel.Text = string.Format("{0} zł", item.Prize);
             this.CartCountLabel.Text = BookID;
+            this.ShoppingCartBookID.Text = BookID;
         }
 
         private void BookInCartControl_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void RemoveBookFromCartButton_Click(object sender, EventArgs e)
+        {
+            BookControl.staticBookTitleList.Remove(this.ShoppingCartBookID.Text);
+            ShopCartControl sdf = new ShopCartControl();
+            this.Parent.Controls.Add(sdf);
+            sdf.BringToFront();
+            this.Parent.Refresh();
         }
     }
 }

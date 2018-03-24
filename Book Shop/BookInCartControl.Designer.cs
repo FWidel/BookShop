@@ -38,6 +38,7 @@
             this.RemoveBookFromCartButton = new System.Windows.Forms.Button();
             this.BookTitleInCart = new System.Windows.Forms.Label();
             this.BookInShopCartPictureBox = new System.Windows.Forms.PictureBox();
+            this.ShoppingCartBookID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BookInShopCartPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,6 +119,7 @@
             this.RemoveBookFromCartButton.TabIndex = 13;
             this.RemoveBookFromCartButton.Text = "Remove";
             this.RemoveBookFromCartButton.UseVisualStyleBackColor = true;
+            this.RemoveBookFromCartButton.Click += new System.EventHandler(this.RemoveBookFromCartButton_Click);
             // 
             // BookTitleInCart
             // 
@@ -138,10 +140,21 @@
             this.BookInShopCartPictureBox.TabIndex = 11;
             this.BookInShopCartPictureBox.TabStop = false;
             // 
+            // ShoppingCartBookID
+            // 
+            this.ShoppingCartBookID.AutoSize = true;
+            this.ShoppingCartBookID.Location = new System.Drawing.Point(215, 40);
+            this.ShoppingCartBookID.Name = "ShoppingCartBookID";
+            this.ShoppingCartBookID.Size = new System.Drawing.Size(35, 13);
+            this.ShoppingCartBookID.TabIndex = 21;
+            this.ShoppingCartBookID.Text = "label1";
+            this.ShoppingCartBookID.Visible = false;
+            // 
             // BookInCartControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ShoppingCartBookID);
             this.Controls.Add(this.ShopCartTotalPriceForBookLabel);
             this.Controls.Add(this.ShopCartCountMaxItemTextBox);
             this.Controls.Add(this.label1);
@@ -173,5 +186,6 @@
         private System.Windows.Forms.Button RemoveBookFromCartButton;
         private System.Windows.Forms.Label BookTitleInCart;
         private System.Windows.Forms.PictureBox BookInShopCartPictureBox;
+        private System.Windows.Forms.Label ShoppingCartBookID;
     }
 }
