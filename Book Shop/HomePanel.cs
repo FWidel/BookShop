@@ -87,9 +87,10 @@ namespace Book_Shop
             int WSPX = 0;
             int WSPY = 0;
             int TRANSLATIONVERTICAL = 0;
+            int BookID = 0;
             foreach (Item item in store.Items)
             {
-                Controls.Add(new BookControl(WSPY, WSPX, item));
+                Controls.Add(new BookControl(WSPY, WSPX, item, BookID++));
 
                 if (TRANSLATIONVERTICAL < 2) WSPX += 200;
                 if (TRANSLATIONVERTICAL == 2) { WSPY += 400; WSPX = 0; TRANSLATIONVERTICAL = -1; }

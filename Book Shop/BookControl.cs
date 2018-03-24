@@ -14,16 +14,16 @@ namespace Book_Shop
     {
         public static List<string> staticBookTitleList = new List<string>();
        
-        public BookControl(int Top, int Left, Item item)
+        public BookControl(int Top, int Left, Item item, int BookID)
         {
            
             InitializeComponent();
             this.BookNameControl.Text = item.Title;
             this.Top = Top;
             this.Left = Left;
-            this.panel1.BackgroundImage = item.BookImage;
+            this.BookControlpictureBox.Image = item.BookImage;
             this.BookPriceLabelControl.Text = item.Prize.ToString();
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BookControlID.Text = BookID.ToString();
 
 
 
@@ -32,8 +32,8 @@ namespace Book_Shop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            staticBookTitleList.Add(this.BookNameControl.Text);
-
+            staticBookTitleList.Add(this.BookControlID.Text);
+            
         }
 
         private void BookControl_Load(object sender, EventArgs e)

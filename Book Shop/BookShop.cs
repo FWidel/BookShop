@@ -20,7 +20,7 @@ namespace Book_Shop
         {
             InitializeComponent();
             homePanel1.BringToFront();
-
+            homePanel2.BringToFront();
         }
 
 
@@ -45,10 +45,10 @@ namespace Book_Shop
             SidePanel.Height = ShoppingCartButton.Height;
             SidePanel.Top = ShoppingCartButton.Top;
             shopCartControl1.BringToFront();
-
-            shopCartControl1.Controls.Add(new ShopCartControl()); // to
-          
-            //shopCartControl1.Refresh();
+            ShopCartControl sdf = new ShopCartControl();
+            shopCartControl1.Controls.Add(sdf);
+            sdf.BringToFront();
+            shopCartControl1.Refresh();
 
 
         }

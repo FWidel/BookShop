@@ -37,8 +37,8 @@
             this.CartCountLabel = new System.Windows.Forms.Label();
             this.RemoveBookFromCartButton = new System.Windows.Forms.Button();
             this.BookTitleInCart = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.BookInShopCartPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.BookInShopCartPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ShopCartTotalPriceForBookLabel
@@ -112,7 +112,7 @@
             // 
             // RemoveBookFromCartButton
             // 
-            this.RemoveBookFromCartButton.Location = new System.Drawing.Point(597, 12);
+            this.RemoveBookFromCartButton.Location = new System.Drawing.Point(592, 9);
             this.RemoveBookFromCartButton.Name = "RemoveBookFromCartButton";
             this.RemoveBookFromCartButton.Size = new System.Drawing.Size(72, 44);
             this.RemoveBookFromCartButton.TabIndex = 13;
@@ -129,13 +129,14 @@
             this.BookTitleInCart.TabIndex = 12;
             this.BookTitleInCart.Text = "Book Title";
             // 
-            // pictureBox1
+            // BookInShopCartPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(46, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 53);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.BookInShopCartPictureBox.Location = new System.Drawing.Point(46, 6);
+            this.BookInShopCartPictureBox.Name = "BookInShopCartPictureBox";
+            this.BookInShopCartPictureBox.Size = new System.Drawing.Size(52, 53);
+            this.BookInShopCartPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BookInShopCartPictureBox.TabIndex = 11;
+            this.BookInShopCartPictureBox.TabStop = false;
             // 
             // BookInCartControl
             // 
@@ -150,11 +151,11 @@
             this.Controls.Add(this.CartCountLabel);
             this.Controls.Add(this.RemoveBookFromCartButton);
             this.Controls.Add(this.BookTitleInCart);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.BookInShopCartPictureBox);
             this.Name = "BookInCartControl";
             this.Size = new System.Drawing.Size(689, 64);
             this.Load += new System.EventHandler(this.BookInCartControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookInShopCartPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +172,6 @@
         private System.Windows.Forms.Label CartCountLabel;
         private System.Windows.Forms.Button RemoveBookFromCartButton;
         private System.Windows.Forms.Label BookTitleInCart;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox BookInShopCartPictureBox;
     }
 }

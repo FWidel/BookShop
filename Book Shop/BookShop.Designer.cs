@@ -52,6 +52,7 @@
             this.homePanel2 = new Book_Shop.HomePanel();
             this.homePanel1 = new Book_Shop.HomePanel();
             this.userControl11 = new Book_Shop.HomePanel();
+            this.ShoppingCartCountItems = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookShopLogo)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.ShoppingCartCountItems);
             this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.SettingsButton);
             this.panel1.Controls.Add(this.AccountButton);
@@ -150,7 +152,6 @@
             this.ShoppingCartButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ShoppingCartButton.UseVisualStyleBackColor = true;
             this.ShoppingCartButton.Click += new System.EventHandler(this.ShoppingCartButton_Click);
-
             // 
             // HomeButton
             // 
@@ -259,7 +260,7 @@
             // shopCartControl1
             // 
             this.shopCartControl1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.shopCartControl1.Location = new System.Drawing.Point(177, 131);
+            this.shopCartControl1.Location = new System.Drawing.Point(178, 160);
             this.shopCartControl1.Name = "shopCartControl1";
             this.shopCartControl1.Size = new System.Drawing.Size(833, 559);
             this.shopCartControl1.TabIndex = 7;
@@ -291,6 +292,16 @@
             this.userControl11.Size = new System.Drawing.Size(978, 586);
             this.userControl11.TabIndex = 3;
             // 
+            // ShoppingCartCountItems
+            // 
+            this.ShoppingCartCountItems.AutoSize = true;
+            this.ShoppingCartCountItems.BackColor = System.Drawing.Color.Red;
+            this.ShoppingCartCountItems.Location = new System.Drawing.Point(36, 255);
+            this.ShoppingCartCountItems.Name = "ShoppingCartCountItems";
+            this.ShoppingCartCountItems.Size = new System.Drawing.Size(13, 13);
+            this.ShoppingCartCountItems.TabIndex = 5;
+            this.ShoppingCartCountItems.Text = "0";
+            // 
             // BookShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,14 +315,15 @@
             this.Controls.Add(this.MinimalizeLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.CloseProgramLabel);
-            this.Controls.Add(this.shopCartControl1);
             this.Controls.Add(this.homePanel2);
+            this.Controls.Add(this.shopCartControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BookShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Shop";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookShopLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -342,6 +354,7 @@
         private System.Windows.Forms.PictureBox BookShopLogo;
         private System.Windows.Forms.Label label2;
         private ShopCartControl shopCartControl1;
+        private System.Windows.Forms.Label ShoppingCartCountItems;
     }
 }
 
