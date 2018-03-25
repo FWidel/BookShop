@@ -49,10 +49,16 @@ namespace Book_Shop
             SidePanel.Height = ShoppingCartButton.Height;
             SidePanel.Top = ShoppingCartButton.Top;
             shopCartControl1.BringToFront();
+
+
+
+            shopCartControl1.Controls.Clear();
             ShopCartControl sdf = new ShopCartControl();
+            sdf.Name = "ShoppingCartBookControl";
             shopCartControl1.Controls.Add(sdf);
             sdf.BringToFront();
-            shopCartControl1.Refresh();
+
+            //shopCartControl1.Refresh();
 
 
         }

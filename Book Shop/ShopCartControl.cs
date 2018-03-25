@@ -90,16 +90,18 @@ namespace Book_Shop
             InitializeComponent();
             ShopCartLoad();
             SetupData();
+            this.AutoScroll = true;
+            this.AutoSize = true; 
             
             //this.Update();
         }
 
         public void ShopCartLoad()
         {
-            int x = 0;
+            
             SetupData();
-           
-           // Item item = tempStore.Items[0];
+            int x = 0;
+            // Item item = tempStore.Items[0];
             foreach (string item in BookControl.staticBookTitleList)
             {
 

@@ -34,6 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Name = "ShopCartControl";
             this.Size = new System.Drawing.Size(868, 593);
             this.ResumeLayout(false);
