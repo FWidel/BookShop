@@ -91,9 +91,15 @@ namespace Book_Shop
             ShopCartLoad();
             SetupData();
             this.AutoScroll = true;
-            this.AutoSize = true; 
-            
+            this.AutoSize = true;
+            this.ParentChanged += new EventHandler(ShopCartControlRemoved);
             //this.Update();
+        }
+        private void ShopCartControlRemoved(object sender, EventArgs e)
+        {
+           this.Invalidate();
+            this.Refresh();
+            
         }
 
         public void ShopCartLoad()

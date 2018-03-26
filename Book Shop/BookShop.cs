@@ -13,7 +13,9 @@ namespace Book_Shop
 {
     public partial class BookShop : Form
     {
-        
+
+        BindingSource countBinding = new BindingSource();
+  
         private Store store = new Store();
        
         public BookShop()
@@ -23,10 +25,20 @@ namespace Book_Shop
             //public static BookShop bookShop = new BookShop();
             homePanel1.BringToFront();
             homePanel2.BringToFront();
+            ShoppingCartCountItems.Text = BookControl.staticBookTitleList.Count.ToString();
+            
+           
+            
+            
            
         }
+        public void wywolaj()
+        {
+            ShoppingCartCountItems.Text = BookControl.staticBookTitleList.Count.ToString();
+        }
 
-      
+
+
 
 
         private void button3_Click(object sender, EventArgs e)
@@ -50,8 +62,6 @@ namespace Book_Shop
             SidePanel.Top = ShoppingCartButton.Top;
             shopCartControl1.BringToFront();
 
-
-
             shopCartControl1.Controls.Clear();
             ShopCartControl sdf = new ShopCartControl();
             sdf.Name = "ShoppingCartBookControl";
@@ -60,6 +70,16 @@ namespace Book_Shop
 
             //shopCartControl1.Refresh();
 
+
+        }
+
+        public void RefreshShoppingCart()
+        {
+            shopCartControl1.Controls.Clear();
+            ShopCartControl sdf = new ShopCartControl();
+            sdf.Name = "ShoppingCartBookControl";
+            shopCartControl1.Controls.Add(sdf);
+            sdf.BringToFront();
 
         }
 
@@ -128,6 +148,11 @@ namespace Book_Shop
         }
 
         private void ShoppingCartButton_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ShoppingCartCountItems_Click(object sender, EventArgs e)
         {
 
         }

@@ -83,6 +83,7 @@
             this.ShoppingCartCountItems.Size = new System.Drawing.Size(13, 13);
             this.ShoppingCartCountItems.TabIndex = 5;
             this.ShoppingCartCountItems.Text = "0";
+            this.ShoppingCartCountItems.Click += new System.EventHandler(this.ShoppingCartCountItems_Click);
             // 
             // SidePanel
             // 

@@ -105,25 +105,14 @@ namespace Book_Shop
         {
             
             BookControl.staticBookTitleList.Remove(this.ShoppingCartBookID.Text);
-            Control obj2 = this.Parent.Controls[0];
-            //this.Parent.Controls.Clear();
-            //  this.Parent.Controls.Remove(this);
-            for(int i = 1; i < obj2.Parent.Controls.Count; i++)
-            {
-                obj2.Parent.Controls.RemoveAt(1);
-            }
-            int x = 0;
-            // Item item = tempStore.Items[0];
-            foreach (string item in BookControl.staticBookTitleList)
-            {
-                //if (item == "0") obj2.Parent.Controls[0] = new BookInCartControl(store.Items[Int32.Parse(item)], x, item);
-               // obj2.Parent.Controls.Add(new BookInCartControl(store.Items[Int32.Parse(item)], x, item));
-               // if(item == "1")obj2.Parent.Controls.RemoveAt(0);
-                //Controls.Add(new BookInCartControl(store.Items[0], x));
+            (Application.OpenForms[0] as BookShop).RefreshShoppingCart();
+            (Application.OpenForms[0] as BookShop).wywolaj();
+            //MessageBox.Show(this.Parent.Controls.Count.ToString());
 
-                x += 60;
-            }
-           // sdf.BringToFront();
+
+            // Item item = tempStore.Items[0];
+
+            // sdf.BringToFront();
             //sdf.Refresh();
 
 

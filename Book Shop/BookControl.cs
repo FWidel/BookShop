@@ -29,11 +29,19 @@ namespace Book_Shop
 
         }
 
+        public BookControl()
+        {
+
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
             staticBookTitleList.Add(this.BookControlID.Text);
-            
+            (Application.OpenForms[0] as BookShop).wywolaj();
+
+
+
         }
 
         private void BookControl_Load(object sender, EventArgs e)
