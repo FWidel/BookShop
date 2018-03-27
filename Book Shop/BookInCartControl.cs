@@ -106,7 +106,11 @@ namespace Book_Shop
         {
             
             BookControl.staticBookTitleList.Remove(this.ShoppingCartBookID.Text);
-         
+                int count = 0;
+                BookControl.shoppingDictionary.TryGetValue(this.ShoppingCartBookID.Text, out count);
+                BookControl.shoppingDictionary.Remove(this.ShoppingCartBookID.Text);
+                if(count != 1)BookControl.shoppingDictionary.Add(this.ShoppingCartBookID.Text, count - 1);
+            
             (Application.OpenForms[0] as BookShop).RefreshShoppingCart();
             (Application.OpenForms[0] as BookShop).wywolaj();
             //MessageBox.Show(this.Parent.Controls.Count.ToString());
