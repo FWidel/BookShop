@@ -83,7 +83,7 @@ namespace Book_Shop
 
 
         }
-        public BookInCartControl(Item item, int x, string BookID)
+        public BookInCartControl(Item item, int x, string BookID, string countItems)
         {
             InitializeComponent();
             SetupData();
@@ -92,8 +92,9 @@ namespace Book_Shop
             this.BookTitleInCart.Text = item.Title;
             this.BookInShopCartPictureBox.Image = item.BookImage;
             this.ShopCartTotalPriceForBookLabel.Text = string.Format("{0} zł", item.Prize);
-            this.CartCountLabel.Text = BookID;
+            this.CartCountLabel.Text = countItems;
             this.ShoppingCartBookID.Text = BookID;
+            this.Name = string.Format("Book{0}", BookID);
         }
 
         private void BookInCartControl_Load(object sender, EventArgs e)
@@ -105,6 +106,7 @@ namespace Book_Shop
         {
             
             BookControl.staticBookTitleList.Remove(this.ShoppingCartBookID.Text);
+         
             (Application.OpenForms[0] as BookShop).RefreshShoppingCart();
             (Application.OpenForms[0] as BookShop).wywolaj();
             //MessageBox.Show(this.Parent.Controls.Count.ToString());

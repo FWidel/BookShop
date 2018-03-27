@@ -17,7 +17,6 @@ C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.cspr
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.csproj.CoreCompileInputs.cache
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.exe
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.pdb
-C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.OldProject.resources
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.VendorsControl.resources
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.BookControl.resources
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.HomePanel.resources
@@ -37,3 +36,5 @@ C:\Users\Oneeyed\Desktop\BookShop\Book Shop\obj\Debug\Book Shop.exe
 C:\Users\Oneeyed\Desktop\BookShop\Book Shop\obj\Debug\Book Shop.pdb
 C:\Users\Oneeyed\Desktop\BookShop\Book Shop\obj\Debug\Book_Shop.BookInCartControl.resources
 C:\Users\Oneeyed\Desktop\BookShop\Book Shop\obj\Debug\Book_Shop.ShopCartControl.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.BookInCartControl.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.ShopCartControl.resources

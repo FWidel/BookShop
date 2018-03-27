@@ -101,20 +101,23 @@ namespace Book_Shop
             this.Refresh();
             
         }
-
+      
         public void ShopCartLoad()
         {
             
             SetupData();
+           
+            BookControl.staticBookTitleList.Sort();
+            var uniqueItemsList = BookControl.staticBookTitleList.Distinct().ToList();
+
+
             int x = 0;
             // Item item = tempStore.Items[0];
-            foreach (string item in BookControl.staticBookTitleList)
-            {
-
-                 Controls.Add(new BookInCartControl(store.Items[Int32.Parse(item)], x, item));
+            foreach (KeyValuePair<string, int> entry in BookControl.shoppingDictionary)
+            {   
+                 Controls.Add(new BookInCartControl(store.Items[Int32.Parse(entry.Key)], x, entry.Key, entry.Value.ToString()));
                 //Controls.Add(new BookInCartControl(store.Items[0], x));
-               
-                x += 60;
+                 x += 60;
             }
         }
 
