@@ -104,8 +104,8 @@ namespace Book_Shop
 
         private void RemoveBookFromCartButton_Click(object sender, EventArgs e)
         {
-            
-            BookControl.staticBookTitleList.Remove(this.ShoppingCartBookID.Text);
+
+            BookControl.staticBookTitleList.RemoveAll(item => item == this.ShoppingCartBookID.Text) ;
             BookControl.shoppingDictionary.Remove(this.ShoppingCartBookID.Text);
            
             
