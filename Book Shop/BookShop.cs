@@ -62,11 +62,6 @@ namespace Book_Shop
             SidePanel.Top = ShoppingCartButton.Top;
             shopCartControl1.BringToFront();
 
-          // RefreshShoppingCart();
-
-            //shopCartControl1.Refresh();
-
-
         }
 
         public void RefreshShoppingCart()

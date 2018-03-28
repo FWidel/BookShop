@@ -92,7 +92,7 @@ namespace Book_Shop
             this.BookTitleInCart.Text = item.Title;
             this.BookInShopCartPictureBox.Image = item.BookImage;
             this.ShopCartTotalPriceForBookLabel.Text = string.Format("{0} zł", item.Prize);
-            this.CartCountLabel.Text = countItems;
+            this.ShopCartUserItemSelectCount.Text = countItems;
             this.ShoppingCartBookID.Text = BookID;
             this.Name = string.Format("Book{0}", BookID);
         }
@@ -106,10 +106,8 @@ namespace Book_Shop
         {
             
             BookControl.staticBookTitleList.Remove(this.ShoppingCartBookID.Text);
-                int count = 0;
-                BookControl.shoppingDictionary.TryGetValue(this.ShoppingCartBookID.Text, out count);
-                BookControl.shoppingDictionary.Remove(this.ShoppingCartBookID.Text);
-                if(count != 1)BookControl.shoppingDictionary.Add(this.ShoppingCartBookID.Text, count - 1);
+            BookControl.shoppingDictionary.Remove(this.ShoppingCartBookID.Text);
+           
             
             (Application.OpenForms[0] as BookShop).RefreshShoppingCart();
             (Application.OpenForms[0] as BookShop).wywolaj();
