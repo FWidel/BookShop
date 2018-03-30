@@ -32,7 +32,7 @@ namespace Book_Shop
             
            
         }
-        public void wywolaj()
+        public void RefreshShoppingCartCounter()
         {
             ShoppingCartCountItems.Text = BookControl.staticBookTitleList.Count.ToString();
         }

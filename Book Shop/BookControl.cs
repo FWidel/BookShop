@@ -49,7 +49,7 @@ namespace Book_Shop
                 shoppingDictionary.Add(this.BookControlID.Text, count + 1);
             }
             staticBookTitleList.Add(this.BookControlID.Text);
-            (Application.OpenForms[0] as BookShop).wywolaj();
+            (Application.OpenForms[0] as BookShop).RefreshShoppingCartCounter();
             (Application.OpenForms[0] as BookShop).RefreshShoppingCart();
 
 

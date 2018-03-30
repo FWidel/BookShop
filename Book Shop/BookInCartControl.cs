@@ -110,7 +110,7 @@ namespace Book_Shop
            
             
             (Application.OpenForms[0] as BookShop).RefreshShoppingCart();
-            (Application.OpenForms[0] as BookShop).wywolaj();
+            (Application.OpenForms[0] as BookShop).RefreshShoppingCartCounter();
             //MessageBox.Show(this.Parent.Controls.Count.ToString());
 
 
