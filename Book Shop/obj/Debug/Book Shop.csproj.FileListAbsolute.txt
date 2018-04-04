@@ -38,3 +38,5 @@ C:\Users\Oneeyed\Desktop\BookShop\Book Shop\obj\Debug\Book_Shop.BookInCartContro
 C:\Users\Oneeyed\Desktop\BookShop\Book Shop\obj\Debug\Book_Shop.ShopCartControl.resources
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.BookInCartControl.resources
 C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book_Shop.ShopCartControl.resources
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Oneeyed\Desktop\gitProjects\BookShop\Book Shop\obj\Debug\Book Shop.csproj.CopyComplete

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Book_Shop.SQL;
 namespace Book_Shop
 {
     public partial class BookShop : Form
@@ -26,9 +26,8 @@ namespace Book_Shop
             homePanel1.BringToFront();
             homePanel2.BringToFront();
             ShoppingCartCountItems.Text = BookControl.staticBookTitleList.Count.ToString();
-            
-           
-            
+            SQLCONNECTOR SQLConnection = new SQLCONNECTOR();
+            SQLConnection.SqlConnect();
             
            
         }

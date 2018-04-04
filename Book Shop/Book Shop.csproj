@@ -36,6 +36,9 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.2.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.4.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -84,6 +87,7 @@
     <Compile Include="ShopCartControl.Designer.cs">
       <DependentUpon>ShopCartControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="SQL\SQLCONNECTOR.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="HomePanel.cs">
       <SubType>UserControl</SubType>
@@ -132,6 +136,7 @@
     <EmbeddedResource Include="VendorsControl.resx">
       <DependentUpon>VendorsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
