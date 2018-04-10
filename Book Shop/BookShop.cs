@@ -13,10 +13,8 @@ namespace Book_Shop
 {
     public partial class BookShop : Form
     {
-
-        BindingSource countBinding = new BindingSource();
   
-        private Store store = new Store();
+        public Store store = new Store();
        
         public BookShop()
         {

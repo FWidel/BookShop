@@ -5,13 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows;
-
+using System.Drawing;
 namespace Book_Shop.SQL
 {
     class SQLCONNECTOR
     {
+        public Store store = new Store();
+
+
         public void SqlConnect()
         {
+            store.Items = new List<Item>();
+
             using (var sqlConnection = new SqlConnection("Server=.;Database=BookShop;User Id=sa;Password = bookshop;"))
             {
                 sqlConnection.Open();
@@ -21,8 +26,16 @@ namespace Book_Shop.SQL
                     {
                         while (reader.Read())
                         {
-                            var BooksTitle = reader["Title"] as string;
-                            MessageBox.Show(BooksTitle + " - Z bazy kurwa");
+                            Item tempItem = new Item();
+                            tempItem.Title = reader["Title"] as string;
+                            tempItem.Prize = Convert.ToDouble(reader["Price"]);
+                            tempItem.BookImage = new Bitmap(Properties.Resources.ResourceManager.GetString(reader["BookImage"] as string));
+                            tempItem.Author = reader["Author"] as string;
+                            tempItem.Description = reader["BookDescription"] as string;
+                            tempItem.Owner = new Vendor();
+                            tempItem.Sold = Convert.ToBoolean(reader["Sold"]);
+
+                            store.Items.Add(tempItem);
                         }
                     }
                 }
