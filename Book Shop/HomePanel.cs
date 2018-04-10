@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Book_Shop.SQL;
 namespace Book_Shop
 {
     public partial class HomePanel : UserControl
@@ -84,11 +84,25 @@ namespace Book_Shop
 
 
 
+  
+
+
+        }
+
+ 
+        public HomePanel()
+        {
+            InitializeComponent();
+            // SetupData();
+            SQLCONNECTOR sqlConnection = new SQLCONNECTOR();
+            sqlConnection.SqlConnect();
+
+
             int WSPX = 0;
             int WSPY = 0;
             int TRANSLATIONVERTICAL = 0;
             int BookID = 0;
-            foreach (Item item in store.Items)
+            foreach (Item item in sqlConnection.store.Items)
             {
                 Controls.Add(new BookControl(WSPY, WSPX, item, BookID++));
 
@@ -97,19 +111,11 @@ namespace Book_Shop
                 TRANSLATIONVERTICAL++;
             }
 
-
-        }
-
-        public HomePanel()
-        {
-            InitializeComponent();
-            SetupData();
-
             // Set the button to return a value of OK when clicked.
             // button1.DialogResult = DialogResult.OK;
 
             // Add the button to the form.
-            
+
 
         }
 

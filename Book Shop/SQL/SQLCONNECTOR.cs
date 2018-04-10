@@ -29,7 +29,8 @@ namespace Book_Shop.SQL
                             Item tempItem = new Item();
                             tempItem.Title = reader["Title"] as string;
                             tempItem.Prize = Convert.ToDouble(reader["Price"]);
-                            tempItem.BookImage = new Bitmap(Properties.Resources.ResourceManager.GetString(reader["BookImage"] as string));
+                            string imageName = reader["BookImage"] as string;
+                            tempItem.BookImage = Properties.Resources.ResourceManager.GetObject(imageName) as Bitmap;
                             tempItem.Author = reader["Author"] as string;
                             tempItem.Description = reader["BookDescription"] as string;
                             tempItem.Owner = new Vendor();
