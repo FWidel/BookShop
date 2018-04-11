@@ -9,8 +9,6 @@ namespace Book_Shop
 {
     public class Item 
     {
-      
-
         public string Title { get; set; }
         public double Prize { get; set; }
         public string Description { get; set; }
