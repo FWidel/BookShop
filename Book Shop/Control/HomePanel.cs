@@ -96,6 +96,7 @@ namespace Book_Shop
             // SetupData();
             SQLCONNECTOR sqlConnection = new SQLCONNECTOR();
             sqlConnection.SqlConnect();
+            sqlConnection.SelectBookFromDatabase();
 
 
             int WSPX = 0;

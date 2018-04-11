@@ -34,6 +34,7 @@ namespace Book_Shop
              */
             SQLCONNECTOR sqlConnection = new SQLCONNECTOR();
             sqlConnection.SqlConnect();
+            sqlConnection.SelectBookFromDatabase();
 
             BookControl.staticBookTitleList.Sort();
             var uniqueItemsList = BookControl.staticBookTitleList.Distinct().ToList();

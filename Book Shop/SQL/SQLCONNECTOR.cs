@@ -11,15 +11,20 @@ namespace Book_Shop.SQL
     class SQLCONNECTOR
     {
         public Store store = new Store();
-
+        private SqlConnection sqlConnection;
 
         public void SqlConnect()
         {
+            sqlConnection = new SqlConnection("Server=.;Database=bookshop;User Id=BookShop;Password =bookshop;");
             store.Items = new List<Item>();
+        }
 
-            using (var sqlConnection = new SqlConnection("Server=.;Database=BookShop;User Id=sa;Password = bookshop;"))
+        public void SelectBookFromDatabase()
+        {
+            try
             {
                 sqlConnection.Open();
+
                 using (var command = new SqlCommand("SELECT * FROM BOOKS", sqlConnection))
                 {
                     using (var reader = command.ExecuteReader())
@@ -40,6 +45,15 @@ namespace Book_Shop.SQL
                         }
                     }
                 }
+                sqlConnection.Close();
+            }
+            catch(SqlException e)
+            {
+                MessageBox.Show("Cannot Connect do Database or execute SQL command. Exception: " + e.ToString());
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("General Exception: " + e.ToString());
             }
         }
 
