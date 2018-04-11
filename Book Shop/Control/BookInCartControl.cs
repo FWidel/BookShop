@@ -91,7 +91,7 @@ namespace Book_Shop
             this.Left = 0;
             this.BookTitleInCart.Text = item.Title;
             this.BookInShopCartPictureBox.Image = item.BookImage;
-            this.ShopCartTotalPriceForBookLabel.Text = string.Format("{0} zł", item.Prize);
+            this.ShopCartTotalPriceForBookLabel.Text = string.Format("{0} zł", item.Prize * (Convert.ToDouble(countItems)));
             this.ShopCartUserItemSelectCount.Text = countItems;
             this.ShoppingCartBookID.Text = BookID;
             this.Name = string.Format("Book{0}", BookID);

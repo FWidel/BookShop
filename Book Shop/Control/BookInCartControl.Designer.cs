@@ -99,7 +99,7 @@
             this.ShopCartUserItemSelectCount.Size = new System.Drawing.Size(36, 20);
             this.ShopCartUserItemSelectCount.TabIndex = 15;
             this.ShopCartUserItemSelectCount.Text = "1";
-            this.ShopCartUserItemSelectCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ShopCartUserItemSelectCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CartCountLabel
             // 
@@ -113,7 +113,7 @@
             // 
             // RemoveBookFromCartButton
             // 
-            this.RemoveBookFromCartButton.Location = new System.Drawing.Point(592, 9);
+            this.RemoveBookFromCartButton.Location = new System.Drawing.Point(562, 8);
             this.RemoveBookFromCartButton.Name = "RemoveBookFromCartButton";
             this.RemoveBookFromCartButton.Size = new System.Drawing.Size(72, 44);
             this.RemoveBookFromCartButton.TabIndex = 13;
